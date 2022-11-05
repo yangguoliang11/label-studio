@@ -48,7 +48,7 @@ describe("User authentication", () => {
       password: '123',
     }, "Create Account");
 
-    await expect(page).toMatch("Please enter a password 8-12 characters in length");
+    await expect(page).toMatch("请输入长度为8-12个字符的密码");
   });
 
   it("Should log in with default credentials", async () => {

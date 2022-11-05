@@ -1,10 +1,10 @@
 ---
-title: Sound Event Detection
+title: 声音事件检测
 type: templates
 category: Audio/Speech Processing
 cat: audio-speech-processing
 order: 302
-meta_title: Sound Event Detection Data Labeling Template
+meta_title: 声音事件检测 Data Labeling Template
 meta_description: Template for detecting sound from events in audio clips with Label Studio for your machine learning and data science projects.
 ---
 

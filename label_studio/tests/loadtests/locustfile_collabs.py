@@ -13,7 +13,7 @@ def randomString(stringLength):
     return ''.join(random.choice(letters) for i in range(stringLength))
 
 
-all_labels = ['Person', 'Organization', 'Fact', 'Money', 'Date', 'Time', 'Ordinal', 'Percent', 'Product', 'Language',
+all_labels = ['Person', '组织', 'Fact', 'Money', 'Date', 'Time', 'Ordinal', 'Percent', 'Product', 'Language',
               'Location']
 
 

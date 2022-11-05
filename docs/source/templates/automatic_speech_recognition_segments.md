@@ -1,10 +1,10 @@
 ---
-title: Automatic Speech Recognition using Segments
+title: 使用分割符的自动语音识别
 type: templates
 category: Audio/Speech Processing
 cat: audio-speech-processing
 order: 303
-meta_title: Automatic Speech Recognition using Segments Data Labeling Template
+meta_title: 使用分割符的自动语音识别 Data Labeling Template
 meta_description: Template for audio transcription for automatic speech recognition segmentation use cases with Label Studio for your machine learning and data science projects.
 ---
 

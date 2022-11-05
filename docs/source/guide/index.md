@@ -46,7 +46,7 @@ label-studio start
 5. Click **Create** to create a project and start labeling data.
 6. Name the project, and if you want, type a description and select a color.
 7. Click **Data Import** and upload the data files that you want to use. If you want to use data from a local directory, cloud storage bucket, or database, skip this step for now.
-8. Click **Labeling Setup** and choose a template and customize the label names for your use case. 
+8. Click **标签设置** and choose a template and customize the label names for your use case. 
 9. Click **Save** to save your project. 
 
 You're ready to start [labeling and annotating your data](labeling.html)!

@@ -39,13 +39,13 @@ export const GeneralSettings = () => {
         <Form.Row columnCount={1} rowGap="32px">
           <Input
             name="title"
-            label="Project Name"
+            label="项目名称"
             labelProps={{large: true}}
           />
 
           <TextArea
             name="description"
-            label="Description"
+            label="描述"
             labelProps={{large: true}}
             style={{minHeight: 128}}
           />
@@ -72,9 +72,9 @@ export const GeneralSettings = () => {
 
         <Form.Actions>
           <Form.Indicator>
-            <span case="success">Saved!</span>
+            <span case="success">保存!</span>
           </Form.Indicator>
-          <Button type="submit" look="primary" style={{width: 120}}>Save</Button>
+          <Button type="submit" look="primary" style={{width: 120}}>保存</Button>
         </Form.Actions>
       </Form>
     </div>

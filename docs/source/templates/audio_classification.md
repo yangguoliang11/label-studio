@@ -66,5 +66,5 @@ You must use the Choices tag in combination with the [Choice](/tags/choice.html)
 
 ## Related templates
 
-- [Intent Classification](intent_classification.html)
+- [意图分类](intent_classification.html)
 - [Audio Classification with Segments](audio_regions.html)

@@ -1,10 +1,10 @@
 ---
-title: Machine Translation
+title: 机器翻译
 type: templates
 category: Natural Language Processing
 cat: natural-language-processing
 order: 207
-meta_title: Machine Translation Data Labeling Template
+meta_title: 机器翻译 Data Labeling Template
 meta_description: Template for providing translations of text with Label Studio for your machine learning and data science projects.
 ---
 

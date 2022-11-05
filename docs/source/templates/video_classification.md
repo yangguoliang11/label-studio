@@ -1,10 +1,10 @@
 ---
-title: Video Classification
+title: 视频分类
 type: templates
 category: Videos
 cat: videos
 order: 801
-meta_title: Video Classification Data Labeling Template
+meta_title: 视频分类 Data Labeling Template
 meta_description: Template for video classification tasks with Label Studio for your machine learning and data science projects.
 ---
 

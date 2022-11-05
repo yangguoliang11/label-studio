@@ -47,7 +47,7 @@ The [Text](/tags/text.html) object tag specifies the value of the text data:
 <Text name="text" value="$text"/>
 ```
 
-To apply relations to the labeled text spans, use the labeling interface. See [Add relations between annotations](/guide/labeling.html#Add-relations-between-annotations). If you want to add labels to the relations themselves, use the [Relations](/tags/relations.html) tag. See the [Relation Extraction Template](relation_extraction.html) for more.
+To apply relations to the labeled text spans, use the labeling interface. See [Add relations between annotations](/guide/labeling.html#Add-relations-between-annotations). If you want to add labels to the relations themselves, use the [Relations](/tags/relations.html) tag. See the [关系抽取 Template](relation_extraction.html) for more.
 
 ## Related tags
 

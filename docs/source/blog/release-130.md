@@ -59,7 +59,7 @@ This lets you create traditional brush mask annotations for some tasks, or use t
 
 You can also get interactive pre-annotations for text or HTML when performing named entity recognition (NER) tasks. For example, if you have a long sample of text with multiple occurrences of a word or phrase, you can set up a machine learning backend to identify identical or similar text spans based on a selection. Amplify your text labeling efficiency with this functionality!
 
-For example, you can label all instances of opossum in this excerpt from [Ecology of the Opossum on a Natural Area in Northeastern Kansas by Henry S. Fitch et al.](https://www.gutenberg.org/ebooks/37199) using the [Text Named Entity Recognition Template](/templates/named_entity.html).
+For example, you can label all instances of opossum in this excerpt from [Ecology of the Opossum on a Natural Area in Northeastern Kansas by Henry S. Fitch et al.](https://www.gutenberg.org/ebooks/37199) using the [Text 命名实体识别 Template](/templates/named_entity.html).
 
 <br/><img src="/images/release-130/possum-text-annotation.gif" alt="Gif scrolling through a long excerpt from the mentioned text about opossums in the Label Studio UI, then enabling auto-annotation and selecting the MISC tag and labeling the word opossum. After a few seconds, all other instances of opossum in the text are similarly labeled." class="gif-border" width="" height="" />
 

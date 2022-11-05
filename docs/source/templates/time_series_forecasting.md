@@ -1,10 +1,10 @@
 ---
-title: Time Series Forecasting 
+title: 时间数列预测法 
 type: templates
 category: Time Series Analysis
 cat: time-series-analysis
 order: 701
-meta_title: Time Series Forecasting Data Labeling Template
+meta_title: 时间数列预测法 Data Labeling Template
 meta_description: Template for preparing time series data for forecasting use cases with Label Studio for your machine learning and data science projects.
 ---
 

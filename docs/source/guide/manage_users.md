@@ -256,7 +256,7 @@ Only people with the Administrator and Owner roles can invite people to Label St
 
 Invite users to your organization by doing the following:
 1. In the Label Studio UI, click the hamburger icon to expand the left-hand menu and click **Organization**. 
-2. On the Organization page, click **+ Add People**.
+2. On the Organization page, click **+ 添加人员**.
 3. In the dialog box that appears, click **Copy Link** and share the invitation link to your Label Studio instance with the people that you want to join your organization.
 
 ### Assign roles to invited users

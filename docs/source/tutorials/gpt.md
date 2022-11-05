@@ -28,7 +28,7 @@ Follow this installation guide and then play around with the results. Generate y
    
 3. In the project **Settings**, set up the **Labeling Interface**.
    
-4. Select **Browse Templates** and select the Conversational AI **Response Generation** template. 
+4. Select **Browse Templates** and select the Conversational AI **回答生成** template. 
 
 5. Open the **Machine Learning** settings and click **Add Model**. 
 

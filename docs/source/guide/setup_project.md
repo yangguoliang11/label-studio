@@ -24,7 +24,7 @@ When you're creating a project, you can save your progress at any time. You don'
 1. In the Label Studio UI, click **Create Project**.
 2. Type a project name and a description. If you want, choose a color for your project.
 3. If you're ready to import your data, click **Data Import** and import data from the Label Studio UI. For details about import formats and data types, see [Get data into Label Studio](tasks.html).
-4. If you're ready to set up the labeling interface, click **Labeling Setup** and choose a template or create a custom configuration for labeling. See [Set up the labeling interface for your project](setup.html).
+4. If you're ready to set up the labeling interface, click **标签设置** and choose a template or create a custom configuration for labeling. See [Set up the labeling interface for your project](setup.html).
 5. When you're done, click **Save** to save your project.
 
 You can also create a project from a template by clicking **Use Template**. See more about [project templates](#Create-a-project-template).

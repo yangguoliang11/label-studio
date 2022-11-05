@@ -1,5 +1,5 @@
 ---
-title: HTML Entity Recognition
+title: HTML实体识别
 type: templates
 category: Structured Data Parsing
 cat: structured-data-parsing

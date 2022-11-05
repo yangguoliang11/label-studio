@@ -73,6 +73,6 @@ The `choice="multiple"` parameter allows annotators to select both "Speech" and 
 - [Choices](/tags/choices.html)
 
 ## Related templates
-- [Signal Quality Detection](signal_quality_detection.html)
-- [Sound Event Detection](sound_event_detection.html)
+- [信号质量检测](signal_quality_detection.html)
+- [声音事件检测](sound_event_detection.html)
 - [Audio Classification with Segments](audio_regions.html)

@@ -1,10 +1,10 @@
 ---
-title: Signal Quality 
+title: 信号质量 
 type: templates
 category: Time Series Analysis
 cat: time-series-analysis
 order: 704
-meta_title: Signal Quality Data Labeling Template
+meta_title: 信号质量 Data Labeling Template
 meta_description: Template to classify signal quality in a time series with Label Studio for your machine learning and data science projects.
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: Signal Quality Detection
+title: 信号质量检测
 type: templates
 category: Audio/Speech Processing
 cat: audio-speech-processing
 order: 304
-meta_title: Signal Quality Detection Data Labeling Template
+meta_title: 信号质量检测 Data Labeling Template
 meta_description: Template for detecting the quality of an audio signal with Label Studio for your machine learning and data science projects.
 ---
 

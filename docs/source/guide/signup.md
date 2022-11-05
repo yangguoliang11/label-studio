@@ -76,14 +76,14 @@ Then, start Label Studio and log in with the username and password that you set 
 After you [set up a labeling project](setup.html), invite annotators to the project to start collaborating on labeling tasks. Inviting people to your Label Studio instance with a link does not restrict access to the signup page unless you also set an environment variable. See how to [Restrict signup for local deployments](#Restrict-signup-for-local-deployments) and [Restrict signup for cloud deployments](#Restrict-signup-for-cloud-deployments) on this page.
 
 1. In the Label Studio UI, click the hamburger icon and click **People**.
-2. Click **+ Add People**.
+2. Click **+ 添加人员**.
 3. Copy the invitation link and share it with those that you want to invite to Label Studio. If you need to update the link and deactivate the old one, return to this page and click **Reset Link**. The link only resets if the signup page is also disabled.
 
 ## Manage your account in Label Studio
 After you create an account in Label Studio, you can make changes to it as needed.
 
 1. From the Label Studio UI, click the user icon in the upper right.
-2. Click **Account & Settings**.
+2. Click **帐户和设置**.
 3. Update your display name and add a profile picture no larger than 512 x 512 pixels. 
 4. Click **Save**. 
 

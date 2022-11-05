@@ -1,10 +1,10 @@
 ---
-title: Response Generation
+title: 回答生成
 type: templates
 category: Conversational AI
 cat: conversational-ai
 order: 401
-meta_title: Response Generation Data Labeling Template
+meta_title: 回答生成 Data Labeling Template
 meta_description: Template for generating responses in natural language understanding use cases with Label Studio for your machine learning and data science projects.
 ---
 

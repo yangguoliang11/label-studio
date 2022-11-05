@@ -55,7 +55,7 @@ class LoginForm(forms.Form):
 
 
 class UserSignupForm(forms.Form):
-    email = forms.EmailField(label="Work Email", error_messages={'required': 'Invalid email'})
+    email = forms.EmailField(label="Work Email", error_messages={'required': '无效电子邮件'})
     password = forms.CharField(max_length=PASS_MAX_LENGTH,
                                error_messages={'required': PASS_LENGTH_ERR},
                                widget=forms.TextInput(attrs={'type': 'password'}))

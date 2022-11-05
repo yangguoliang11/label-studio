@@ -367,7 +367,7 @@ actions = [
     {
         'entry_point': remove_duplicates,
         'permission': all_permissions.tasks_change,
-        'title': 'Remove Duplicated Tasks',
+        'title': '移除重复的任务',
         'order': 1,
         'experimental': True,
         'dialog': {
@@ -380,7 +380,7 @@ actions = [
     {
         'entry_point': rename_labels,
         'permission': all_permissions.tasks_change,
-        'title': 'Rename Labels',
+        'title': '重命名标签',
         'order': 1,
         'experimental': True,
         'dialog': {

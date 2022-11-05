@@ -1,5 +1,5 @@
 ---
-title: Search Page Ranking
+title: 搜索页面排名
 type: templates
 category: Ranking and Scoring
 cat: ranking-and-scoring
@@ -11,7 +11,7 @@ meta_description:
 Based on your search input query, you can select the most relevant search results provided by search engine.
 <br/>
 
-<img src="/images/templates/serp-ranking.png" alt="Search Page Ranking example" class="gif-border" width="552px" height="408px" />
+<img src="/images/templates/serp-ranking.png" alt="搜索页面排名 example" class="gif-border" width="552px" height="408px" />
 
 ## Labeling Configuration
 

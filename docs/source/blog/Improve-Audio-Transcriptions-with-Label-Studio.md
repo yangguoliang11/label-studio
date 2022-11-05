@@ -277,7 +277,7 @@ export USE_DEFAULT_S3_STORAGE=true
    ```
 4. On the Label Studio UI, click **Create** to create an **Audio Transcription** project.
 5. On the **Data Import** tab, upload the `tasks.json` file with pre-annotations from the Amazon Transcribe service. 
-6. On the **Labeling Setup** tab, select the **Automatic Speech Recognition** template.
+6. On the **标签设置** tab, select the **自动语音识别** template.
 7. Save your project.
    <img src="/images/transcribe-blog/project_homepage.png" alt="Screenshot of the Label Studio data manager showing the pre-annotated task loaded into an Audio Transcription project." class="gif-border" />
    If you want, you can sort the tasks by prediction score so that you can review the least confident results first. 

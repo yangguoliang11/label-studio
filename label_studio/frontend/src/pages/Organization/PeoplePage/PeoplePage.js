@@ -75,12 +75,12 @@ export const PeoplePage = () => {
         <Space spread>
           <Space>
             <Button style={{ width: 170 }} onClick={() => updateLink()}>
-              Reset Link
+              重置链接
             </Button>
           </Space>
           <Space>
             <Button primary style={{ width: 170 }} onClick={copyLink}>
-              {copied ? "Copied!" : "Copy link"}
+              {copied ? "已复制!" : "复制地址"}
             </Button>
           </Space>
         </Space>
@@ -115,7 +115,7 @@ export const PeoplePage = () => {
 
           <Space>
             <Button icon={<LsPlus/>} primary onClick={showInvitationModal}>
-              Add People
+            添加人员
             </Button>
           </Space>
         </Space>

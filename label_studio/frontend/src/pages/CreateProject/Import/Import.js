@@ -281,12 +281,12 @@ export const ImportPage = ({
       <header>
         <form className={importClass.elem("url-form") + " inline"} method="POST" onSubmit={onLoadURL}>
           <input placeholder="Dataset URL" name="url" ref={urlRef} />
-          <button type="submit">Add URL</button>
+          <button type="submit">添加URL</button>
         </form>
         <span>or</span>
         <button onClick={() => document.getElementById('file-input').click()} className={importClass.elem("upload-button")}>
           <IconUpload width="16" height="16" className={importClass.elem("upload-icon")} />
-          Upload {files.uploaded.length ? "More " : ""}Files
+          上传 {files.uploaded.length ? "More " : ""}文件
         </button>
         <div className={importClass.elem("csv-handling").mod({ highlighted: highlightCsvHandling, hidden: !csvHandling })}>
           <span>Treat CSV/TSV as</span>
@@ -307,7 +307,7 @@ export const ImportPage = ({
           {!showList && (
             <label htmlFor="file-input">
               <div className={dropzoneClass.elem("content")}>
-                <header>Drag & drop files here<br/>or click to browse</header>
+                <header>将文件拖放到这里<br/>或点击浏览</header>
                 <IconUpload height="64" className={dropzoneClass.elem("icon")} />
                 <dl>
                   <dt>Text</dt><dd>txt</dd>

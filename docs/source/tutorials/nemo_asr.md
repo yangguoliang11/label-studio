@@ -4,9 +4,9 @@ type: blog
 order: 60
 ---
 
-## Automatic Speech Recognition with NVIDIA NeMo
+## 自动语音识别 with NVIDIA NeMo
 
-This an example of using [Nvidia's NeMo toolkit](https://github.com/NVIDIA/NeMo) for creating Automatic Speech Recognition (ASR), Natural Language Understanding (NLU) or Text-to-Speech (TTS) pre-annotations.
+This an example of using [Nvidia's NeMo toolkit](https://github.com/NVIDIA/NeMo) for creating 自动语音识别 (ASR), Natural Language Understanding (NLU) or Text-to-Speech (TTS) pre-annotations.
 
 With the NeMo ASR models, you can create audio pre-annotations with a text area, aka _transcriptions_.
 
@@ -48,7 +48,7 @@ label-studio start my_project --init
    
 8. In Label Studio, open the Settings page for your project and open the Labeling Interface section.
 
-9. From the template list, select `Automatic Speech Recognition`. You can also create your own with `<TextArea>` and `<Audio>` tags. Or copy this labeling config into the Label Studio UI: 
+9. From the template list, select `自动语音识别`. You can also create your own with `<TextArea>` and `<Audio>` tags. Or copy this labeling config into the Label Studio UI: 
 ```xml    
  <View>
   <Audio name="audio" value="url" zoom="true" hotkey="ctrl+enter" />

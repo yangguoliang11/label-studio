@@ -2,7 +2,7 @@
 title:
 type: blog
 order: 20
-meta_title: Text Classification with Scikit-Learn Tutorial
+meta_title: 文本分类 with Scikit-Learn Tutorial
 meta_description: Label Studio tutorial for text classification using Scikit-Learn and Label Studio.
 
 ---

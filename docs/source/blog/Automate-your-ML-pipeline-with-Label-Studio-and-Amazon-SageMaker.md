@@ -446,7 +446,7 @@ To perform image segmentation labeling in Label Studio, you want to set up a pro
 1. In the Label Studio UI, click **Create** to create a project. 
 2. Add a project name of **Bird Segmentation**.
 3. Skip importing data for now, because the data is stored in S3.
-4. On the **Labeling Setup** page, select the **Semantic Segmentation with Polygons** template.
+4. On the **标签设置** page, select the **Semantic Segmentation with Polygons** template.
 5. Remove the existing labels `Airplane` and `Car` and replace them with the following 4 classes:
 ```text
 Beak

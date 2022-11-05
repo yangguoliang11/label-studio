@@ -1,10 +1,10 @@
 ---
-title: Change Point Detection
+title: 变化点检测
 type: templates
 category: Time Series Analysis
 cat: time-series-analysis
 order: 702
-meta_title: Change Point Detection Data Labeling Template
+meta_title: 变化点检测 Data Labeling Template
 meta_description: Template for labeling change point detection in time series data with Label Studio for your machine learning and data science projects.
 ---
 

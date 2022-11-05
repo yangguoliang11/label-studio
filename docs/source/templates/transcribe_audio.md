@@ -1,5 +1,5 @@
 ---
-title: Automatic Speech Recognition
+title: 自动语音识别
 type: templates
 category: Audio/Speech Processing
 cat: audio-speech-processing

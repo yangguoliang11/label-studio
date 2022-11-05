@@ -1,5 +1,5 @@
 ---
-title: Sentiment Analysis Text Classification
+title: Sentiment Analysis 文本分类
 type: templates
 category: Natural Language Processing
 cat: natural-language-processing
@@ -133,6 +133,6 @@ Don't forget to close the original [View](/tags/view.html) tag:
 - [Header](/tags/header.html)
 
 ## Related templates
-- [Named Entity Recognition](named_entity.html)
+- [命名实体识别](named_entity.html)
 - [Image Classification](image_classification.html)
-- [Slot Filling and Intent Classification](slot_filling.html)
+- [Slot Filling and 意图分类](slot_filling.html)

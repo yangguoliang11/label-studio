@@ -37,12 +37,12 @@ Add the template to the documentation:
 2. Add front matter to the template, including the title, category, type, order, and meta information. The `type` must be templates, and the order must be 1 higher than the last relevant template in the category to which your template applies. For example: 
 ```markdown
 ---
-title: Document Retrieval
+title: 文档检索
 type: templates
 category: Ranking and Scoring
 cat: ranking-and-scoring
 order: 502
-meta_title: Document Retrieval Data Labeling Template
+meta_title: 文档检索 Data Labeling Template
 meta_description: Template for annotating documents for document retrieval tasks with Label Studio for your machine learning and data science projects.
 ---
 ```

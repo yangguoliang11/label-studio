@@ -1,9 +1,9 @@
 ---
-title: Taxonomy
+title: 分类学
 type: tags
 order: 426
-meta_title: Taxonomy Tag for Hierarchical Labels
-meta_description: Customize Label Studio with the Taxonomy tag and use hierarchical labels for machine learning and data science projects.
+meta_title: 分类学 Tag for Hierarchical Labels
+meta_description: Customize Label Studio with the 分类学 tag and use hierarchical labels for machine learning and data science projects.
 ---
 
 Use the Taxonomy tag to create one or more hierarchical classifications, storing both choice selections and their ancestors in the results. Use for nested classification tasks with the Choice tag.

@@ -1,10 +1,10 @@
 ---
-title: Content-based Image Retrieval
+title: 基于内容的图像检索
 type: templates
 category: Ranking and Scoring
 cat: ranking-and-scoring
 order: 504
-meta_title: Content-based Image Retrieval Data Labeling Template
+meta_title: 基于内容的图像检索 Data Labeling Template
 meta_description: Template for labeling data for content-based image retrieval tasks with Label Studio for your machine learning and data science projects.
 ---
 

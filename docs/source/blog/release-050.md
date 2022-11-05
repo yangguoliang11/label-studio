@@ -30,7 +30,7 @@ You can create relations between labeled regions. For example, if you put two bo
 </View>
 ```
 
-### Named Entity Recognition performance
+### 命名实体识别 performance
 
 NER got an update, nested entities representation is more apparent now, and it's optimized to support large texts.
 

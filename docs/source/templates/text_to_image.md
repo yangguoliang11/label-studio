@@ -1,5 +1,5 @@
 ---
-title: Text-to-Image Generation
+title: 文本到图像生成
 type: templates
 category: Ranking and Scoring
 cat: ranking-and-scoring
@@ -11,7 +11,7 @@ meta_description:
 Based on the natural language prompt, you can generate the set of images from which you can select.
 <br/>
 
-<img src="/images/templates/text-to-image.png" alt="Text-to-Image Generation example" class="gif-border" width="552px" height="408px" />
+<img src="/images/templates/text-to-image.png" alt="文本到图像生成 example" class="gif-border" width="552px" height="408px" />
 
 ## Labeling Configuration
 

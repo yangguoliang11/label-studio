@@ -13,7 +13,7 @@
   {
     breadcrumbs: [
       {
-        title: "Account & Settings"
+        title: "帐户和设置"
       }
     ],
   }
@@ -105,8 +105,8 @@
           {% endif %}
         </textarea>
         <p class="actions">
-          <button type="button" class="blinking-status ls-button" data-copy="example_fetch">Copy</button>
-          <a class="ls-button" href="https://labelstud.io/guide/api.html" target="_blank">Documentation</a>
+          <button type="button" class="blinking-status ls-button" data-copy="example_fetch">复制</button>
+          <a class="ls-button" href="https://labelstud.io/guide/api.html" target="_blank">文档</a>
         </p>
       </div>
     </form>
@@ -129,9 +129,9 @@
         <tr><td>Annotations completed by you</td><td>{{ user.active_organization_annotations.count }}</td></tr>
         <tr><td>Projects contributed by you</td><td>{{ user.active_organization_contributed_project_number }}</td></tr>
         <tr><td></td><td></td></tr>
-        <tr><td style="min-width: 75px">Organization ID</td><td>{{ user.active_organization.id }}</td></tr>
-        <tr><td>Organization owner</td><td>{{ user.active_organization.created_by }}</td></tr>
-        <tr><td>Organization created at</td><td>{{ user.active_organization.created_at }}</td></tr>
+        <tr><td style="min-width: 75px">组织 ID</td><td>{{ user.active_organization.id }}</td></tr>
+        <tr><td>组织 owner</td><td>{{ user.active_organization.created_by }}</td></tr>
+        <tr><td>组织 created at</td><td>{{ user.active_organization.created_at }}</td></tr>
       </table>
 
     </form>
@@ -160,7 +160,7 @@
                  onclick="smart_submit()">
 
           <label for="allow_newsletters_visual" style="display: inline-block; cursor: pointer; margin-top: -10px">
-            Get the latest news & tips from Heidi
+            从Heidi处获取最新消息
             <img src="{{ settings.HOSTNAME }}{% static 'images/heidi.png' %}" alt="Heidi"
                  width="25" style="display: inline; margin: 0; position: relative; top: 5px; left: 0">
           </label>

@@ -1,10 +1,10 @@
 ---
-title: Video Timeline Segmentation
+title: 视频时间轴分割
 type: templates
 category: Videos
 cat: videos
 order: 802
-meta_title: Video Timeline Segmentation Data Labeling Template
+meta_title: 视频时间轴分割 Data Labeling Template
 meta_description: Template for segmenting videos on a timeline with Label Studio for your machine learning and data science projects.
 ---
 

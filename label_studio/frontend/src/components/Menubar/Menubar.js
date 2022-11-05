@@ -137,14 +137,14 @@ export const Menubar = ({
             <Menu>
               <Menu.Item
                 icon={<LsSettings/>}
-                label="Account &amp; Settings"
+                label="帐户和设置"
                 href="/user/account"
                 data-external
               />
               {/* <Menu.Item label="Dark Mode"/> */}
               <Menu.Item
                 icon={<LsDoor/>}
-                label="Log Out"
+                label="注销"
                 href={absoluteURL("/logout")}
                 data-external
               />
@@ -156,7 +156,7 @@ export const Menubar = ({
                     href="/user/account"
                     data-external
                   >
-                    <span>Please check new notification settings in the Account & Settings page</span>
+                    <span>Please check new notification settings in the 帐户和设置 page</span>
                     <span className={cn("newsletter-menu-badge")} />
                   </Menu.Item>
                 </>
@@ -186,14 +186,14 @@ export const Menubar = ({
             >
               <Menu>
                 <Menu.Item
-                  label="Projects"
+                  label="项目"
                   to="/projects"
                   icon={<IconFolder/>}
                   data-external
                   exact
                 />
                 <Menu.Item
-                  label="Organization"
+                  label="组织"
                   to="/organization"
                   icon={<IconPersonInCircle/>}
                   data-external
@@ -205,25 +205,25 @@ export const Menubar = ({
                 <VersionNotifier showNewVersion/>
 
                 <Menu.Item
-                  label="API"
+                  label="应用程序接口"
                   href="/docs/api"
                   icon={<IconTerminal/>}
                   target="_blank"
                 />
                 <Menu.Item
-                  label="Docs"
+                  label="文件（documents的简写）"
                   href="https://labelstud.io/guide"
                   icon={<IconBook/>}
                   target="_blank"
                 />
                 <Menu.Item
-                  label="GitHub"
+                  label="开源代码库"
                   href="https://github.com/heartexlabs/label-studio"
                   icon={<LsGitHub/>}
                   target="_blank"
                 />
                 <Menu.Item
-                  label="Slack Community"
+                  label="Slack社区"
                   href="https://slack.labelstudio.heartex.com/?source=product-menu"
                   icon={<LsSlack/>}
                   target="_blank"
@@ -239,7 +239,7 @@ export const Menubar = ({
                   onClick={sidebarPin}
                   active={sidebarPinned}
                 >
-                  {sidebarPinned ?  "Unpin menu" : "Pin menu"}
+                  {sidebarPinned ?  "解锁菜单" : "锁定菜单"}
                 </Menu.Item>
 
               </Menu>

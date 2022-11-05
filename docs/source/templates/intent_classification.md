@@ -1,10 +1,10 @@
 ---
-title: Intent Classification
+title: 意图分类
 type: templates
 category: Audio/Speech Processing
 cat: audio-speech-processing
 order: 305
-meta_title: Intent Classification Data Labeling Template
+meta_title: 意图分类 Data Labeling Template
 meta_description: Template for classifying intent of audio data with Label Studio for your machine learning and data science projects.
 ---
 

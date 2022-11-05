@@ -24,7 +24,7 @@ The Label Studio Enterprise API shares many endpoints with the Label Studio Comm
 You must retrieve your access token so that you can authenticate to the API.
 
 1. In the Label Studio UI, click the user icon in the upper right.
-2. Click **Account & Settings**.
+2. Click **帐户和设置**.
 3. Copy the access token. 
 
 In your first API call, specify the access token in the headers: 

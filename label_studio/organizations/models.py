@@ -22,7 +22,7 @@ class OrganizationMember(models.Model):
     )
     organization = models.ForeignKey(
         'organizations.Organization', on_delete=models.CASCADE,
-        help_text='Organization ID'
+        help_text='组织 ID'
     )
     
     created_at = models.DateTimeField(_('created at'), auto_now_add=True)

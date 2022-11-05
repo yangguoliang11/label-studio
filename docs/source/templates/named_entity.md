@@ -1,10 +1,10 @@
 ---
-title: Named Entity Recognition
+title: 命名实体识别
 type: templates
 category: Natural Language Processing
 cat: natural-language-processing
 order: 203
-meta_title: Text Named Entity Recognition Data Labeling Template
+meta_title: Text 命名实体识别 Data Labeling Template
 meta_description: Template for performing named entity recognition on text with Label Studio for your machine learning and data science projects.
 ---
 

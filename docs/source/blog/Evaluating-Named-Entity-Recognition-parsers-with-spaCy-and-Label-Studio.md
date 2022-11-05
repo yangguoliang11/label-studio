@@ -1,5 +1,5 @@
 ---
-title: Evaluating Named Entity Recognition parsers with spaCy and Label Studio
+title: Evaluating 命名实体识别 parsers with spaCy and Label Studio
 type: blog
 order: 96
 image: /images/ner-blog/label_studio_and_spaCy_named_entity.png
@@ -9,9 +9,9 @@ meta_description: Use Label Studio to evaluate named entity recognition parsers 
 
 <img src="/images/ner-blog/label_studio_and_spaCy_named_entity.png" alt="Decorative graphic." class="gif-border" />
 
-This tutorial helps you evaluate accuracy of Named Entity Recognition (NER) taggers using Label Studio. Gather predictions from standard [spaCY](https://spacy.io/) language models for a dataset based on transcripts from the podcast This American Life, then use Label Studio to correct the transcripts and determine which model performed better to focus future retraining efforts.
+This tutorial helps you evaluate accuracy of 命名实体识别 (NER) taggers using Label Studio. Gather predictions from standard [spaCY](https://spacy.io/) language models for a dataset based on transcripts from the podcast This American Life, then use Label Studio to correct the transcripts and determine which model performed better to focus future retraining efforts.
 
-Named Entity Recognition (NER) parsers turn unstructured text into structured content by classifying information like organizations, dates, countries, professions, and others in the text. After a model detects those entities, they can be tagged and classified to allow for further analysis. In order to choose the best NER parser for your data analysis, you want to evaluate model performance against a relevant dataset. 
+命名实体识别 (NER) parsers turn unstructured text into structured content by classifying information like organizations, dates, countries, professions, and others in the text. After a model detects those entities, they can be tagged and classified to allow for further analysis. In order to choose the best NER parser for your data analysis, you want to evaluate model performance against a relevant dataset. 
 
 You can use off-the-shelf parsers and NER taggers to handle named entity parsing and tagging, but the tagging accuracy of these for a specialized or small text corpus can often be low. Because of that, in many real-world settings you need to evaluate the accuracy of various NER taggers and fine tune the most promising one for better accuracy for your data.
 
@@ -173,7 +173,7 @@ Open the `ner-tagging` project and do the following:
 
 Next, set up the labeling interface with the spaCy NER labels to create a gold standard dataset.
 1. From the project in Label Studio, click **Settings** and click **Labeling Interface**.
-2. Select the **Named Entity Recognition** template and paste the contents of the `named_entities.txt` as the labels for the template. 
+2. Select the **命名实体识别** template and paste the contents of the `named_entities.txt` as the labels for the template. 
 3. Click **Save** to save the configuration and return to the project data.
 
 <img src="/images/ner-blog/setupNERtemplate.gif" alt="Gif of the process of adding the named entity labels to Label Studio described in the preceding steps." class="gif-border" />

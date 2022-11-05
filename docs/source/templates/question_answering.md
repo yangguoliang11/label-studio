@@ -1,10 +1,10 @@
 ---
-title: Question Answering
+title: 问题回答
 type: templates
 category: Natural Language Processing
 cat: natural-language-processing
 order: 201
-meta_title: Question Answering Data Labeling Template
+meta_title: 问题回答 Data Labeling Template
 meta_description: Template for identifying answers to questions in tasks with Label Studio for your machine learning and data science projects.
 ---
 
