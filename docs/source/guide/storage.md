@@ -125,7 +125,7 @@ After you [configure access to your S3 bucket](#Configure-access-to-your-S3-buck
 
 1. Open Label Studio in your web browser.
 2. For a specific project, open **Settings > Cloud Storage**.
-3. Click **Add Target Storage**.  
+3. Click **添加目标存储**.  
 4. In the dialog box that appears, select **Amazon S3** as the storage type.
 5. In the **存储标题** field, type a name for the storage to appear in the Label Studio UI.
 6. Specify the name of the S3 bucket, and if relevant, the bucket prefix to specify an internal folder or container.
@@ -135,7 +135,7 @@ After you [configure access to your S3 bucket](#Configure-access-to-your-S3-buck
     - In the **访问密钥ID** field, specify the access key ID of the temporary security credentials for an AWS account with access to your S3 bucket.
     - In the **秘密访问密钥** field, specify the secret key of the temporary security credentials for an AWS account with access to your S3 bucket.
     - In the **会话令牌** field, specify a session token of the temporary security credentials for an AWS account with access to your S3 bucket.
-    - <i class='ent'></i> (Optional) Enable **Can delete objects from storage** if you want to delete annotations stored in the S3 bucket when they are deleted in Label Studio. The storage credentials associated with the bucket must include the ability to delete bucket objects. Leave disabled to not take any action on annotations if they are deleted in Label Studio. 
+    - <i class='ent'></i> (Optional) Enable **可以从存储中删除对象** if you want to delete annotations stored in the S3 bucket when they are deleted in Label Studio. The storage credentials associated with the bucket must include the ability to delete bucket objects. Leave disabled to not take any action on annotations if they are deleted in Label Studio. 
 8. Click **添加存储**.
 
 After adding the storage, click **Sync** to collect tasks from the bucket, or make an API call to [sync export storage](/api#operation/api_storages_export_s3_sync_create).
@@ -250,7 +250,7 @@ In the Label Studio UI, do the following to set up a target storage connection t
 
 1. Open Label Studio in your web browser.
 2. For a specific project, open **Settings > Cloud Storage**.
-3. Click **Add Target Storage**.  
+3. Click **添加目标存储**.  
 4. In the dialog box that appears, select **Amazon S3 (IAM role access)** as the storage type.
 5. In the **存储标题** field, type a name for the storage to appear in the Label Studio UI.
 6. Specify the name of the S3 bucket, and if relevant, the bucket prefix to specify an internal folder or container.
@@ -259,7 +259,7 @@ In the Label Studio UI, do the following to set up a target storage connection t
     - In the **S3端点** field, specify an S3 endpoint if you want to override the URL created by S3 to access your bucket.
     - In the **Role ARN** field, specify the Amazon Resource Name (ARN) of the IAM role that you created to grant access to Label Studio.
     - In the **External ID** field, specify the external ID that identifies Label Studio to your AWS account. You can find the external ID on your **Organization** page.
-    - (Optional) Enable **Can delete objects from storage** if you want to delete annotations stored in the S3 bucket when they are deleted in Label Studio. The storage credentials associated with the bucket must include the ability to delete bucket objects. Leave disabled to not take any action on annotations if they are deleted in Label Studio.
+    - (Optional) Enable **可以从存储中删除对象** if you want to delete annotations stored in the S3 bucket when they are deleted in Label Studio. The storage credentials associated with the bucket must include the ability to delete bucket objects. Leave disabled to not take any action on annotations if they are deleted in Label Studio.
 8. Click **添加存储**.
 
 After adding the storage, click **Sync** to collect tasks from the bucket, or make an API call to [sync export storage](https://app.heartex.com/docs/api#operation/api_storages_export_s3s_sync_create).
@@ -417,7 +417,7 @@ In the Label Studio UI, do the following to set up the connection:
    - Enable this option if you want to create Label Studio tasks from media files automatically, such as JPG, MP3, or similar file types. Use this option for labeling configurations with one source tag.
    - Disable this option if you want to import tasks in Label Studio JSON format directly from your storage. Use this option for complex labeling configurations with HyperText or multiple source tags.    
 8. Click **添加存储**.
-9. Repeat these steps for **Add Target Storage** to use a local file directory for exporting.
+9. Repeat these steps for **添加目标存储** to use a local file directory for exporting.
 
 After adding the storage, click **Sync** to collect tasks from the bucket, or make an API call to [sync import storage](/api#operation/api_storages_localfiles_sync_create).
 

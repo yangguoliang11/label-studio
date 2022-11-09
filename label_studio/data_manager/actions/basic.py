@@ -137,7 +137,7 @@ actions = [
             'text': 'Send the selected tasks to all ML backends connected to the project.'
                     'This operation might be abruptly interrupted due to a timeout. '
                     'The recommended way to get predictions is to update tasks using the Label Studio API.'
-                    '<a href="https://labelstud.io/guide/ml.html>See more in the documentation</a>.'
+                    '<a href="https://labelstud.io/guide/ml.html>请参阅文档中的更多信息</a>.'
                     'Please confirm your action.',
             'type': 'confirm'
         }

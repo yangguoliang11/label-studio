@@ -81,7 +81,7 @@ export const StorageSet = ({title, target, rootClass, buttonLabel}) => {
         <>
           将完成的注释保存到Amazon S3、Google Cloud、Microsoft Azure或Redis。
           <br/>
-          <a href="https://labelstud.io/guide/storage.html">See more in the documentation</a>.
+          <a href="https://labelstud.io/guide/storage.html">请参阅文档中的更多信息</a>.
         </>
       ),
     });

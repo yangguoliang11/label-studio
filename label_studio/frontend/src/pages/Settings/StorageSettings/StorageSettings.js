@@ -24,7 +24,7 @@ export const StorageSettings = () => {
         <StorageSet
           title="目标云存储"
           target="export"
-          buttonLabel="Add Target Storage"
+          buttonLabel="添加目标存储"
           rootClass={rootClass}
         />
       </Columns>

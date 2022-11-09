@@ -479,7 +479,7 @@ Connect the S3 bucket and prefixes to Label Studio to ease the automation of you
 <br/><img src="/images/webhook-blog/data-manager.png" alt="Screenshot of the Label Studio UI showing bird images and annotation progress on the data manager." class="gif-border" width="800px" height="577px" />
 
 As the images sync to Label Studio using pre-signed URLs, set up the target storage to store annotations. 
-1. In the Label Studio Cloud Storage Settings, click **Add Target Storage**.
+1. In the Label Studio Cloud Storage Settings, click **添加目标存储**.
 2. Specify a title for the storage. For example, **Annotated birds**.
 3. Specify a bucket name of **showcase-bucket** and a bucket prefix of **annotations**. 
 4. Specify a region name of `us-east-2`, unless you're using a different region to follow along with this blog post.
