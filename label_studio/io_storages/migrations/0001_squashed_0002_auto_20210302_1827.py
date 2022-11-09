@@ -67,7 +67,7 @@ class Migration(migrations.Migration):
                 ('aws_secret_access_key', models.TextField(blank=True, help_text='AWS_SECRET_ACCESS_KEY', null=True, verbose_name='aws_secret_access_key')),
                 ('aws_session_token', models.TextField(blank=True, help_text='AWS_SESSION_TOKEN', null=True, verbose_name='aws_session_token')),
                 ('region_name', models.TextField(blank=True, help_text='AWS Region', null=True, verbose_name='region_name')),
-                ('s3_endpoint', models.TextField(blank=True, help_text='S3 Endpoint', null=True, verbose_name='s3_endpoint')),
+                ('s3_endpoint', models.TextField(blank=True, help_text='S3端点', null=True, verbose_name='s3_endpoint')),
                 ('project', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='io_storages_s3exportstorages', to='projects.project')),
             ],
             options={
@@ -89,7 +89,7 @@ class Migration(migrations.Migration):
                 ('aws_secret_access_key', models.TextField(blank=True, help_text='AWS_SECRET_ACCESS_KEY', null=True, verbose_name='aws_secret_access_key')),
                 ('aws_session_token', models.TextField(blank=True, help_text='AWS_SESSION_TOKEN', null=True, verbose_name='aws_session_token')),
                 ('region_name', models.TextField(blank=True, help_text='AWS Region', null=True, verbose_name='region_name')),
-                ('s3_endpoint', models.TextField(blank=True, help_text='S3 Endpoint', null=True, verbose_name='s3_endpoint')),
+                ('s3_endpoint', models.TextField(blank=True, help_text='S3端点', null=True, verbose_name='s3_endpoint')),
                 ('presign', models.BooleanField(default=True, help_text='Generate presigned URLs', verbose_name='presign')),
                 ('presign_ttl', models.PositiveSmallIntegerField(default=1, help_text='Presigned URLs TTL (in minutes)', verbose_name='presign_ttl')),
                 ('project', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='io_storages_s3importstorages', to='projects.project')),

@@ -1,10 +1,10 @@
 ---
-title: Optical Character Recognition (OCR)
+title: OCR (OCR)
 type: templates
 category: Computer Vision
 cat: computer-vision
 order: 105
-meta_title: Optical Character Recognition (OCR) Data Labeling Template
+meta_title: OCR (OCR) Data Labeling Template
 meta_description: Template for performing optical character recognition data labeling tasks with Label Studio for your machine learning and data science projects.
 ---
 

@@ -1,8 +1,8 @@
-计算机视觉
-自然语言处理
-音频/语音处理
-Ai对话
-排名和评分
-结构化数据解析
-时间序列分析
-视频
+Computer Vision
+Natural Language Processing
+Audio/Speech Processing
+Conversational AI
+Ranking & Scoring
+Structured Data Parsing
+Time Series Analysis
+Videos

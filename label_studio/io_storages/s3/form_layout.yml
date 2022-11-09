@@ -2,41 +2,41 @@
 title_bucket_prefix: &title_bucket_prefix
   - type: text
     name: title
-    label: Storage Title
+    label: 存储标题
   - type: text
     name: bucket
-    label: Bucket Name
+    label: Bucket名称
     required: true
   - type: text
     name: prefix
-    label: Bucket Prefix
+    label: Bucket前缀
 
 # 2x3 grid
 aws_params: &aws_params
   - type: text
     name: region_name
-    label: Region Name
+    label: 地区名称
     placeholder: us-east-1
   - type: text
     name: s3_endpoint
-    label: S3 Endpoint
+    label: S3端点
   - null
   - type: password
     name: aws_access_key_id
-    label: Access Key ID
+    label: 访问密钥ID
     autoComplete: "off"
     skipAutofill: true
     allowEmpty: false
   - type: password
     name: aws_secret_access_key
-    label: Secret Access Key
+    label: 秘密访问密钥
     autoComplete: "new-password"
     skipAutofill: true
     allowEmpty: false
   - type: password
     name: aws_session_token
     autoComplete: "new-password"
-    label: Session Token
+    label: 会话令牌
     skipAutofill: true
     allowEmpty: false
 
@@ -51,7 +51,7 @@ ImportStorage:
     fields:
       - type: text
         name: regex_filter
-        label: File Filter Regex
+        label: 文件筛选器Regex
         placeholder: '.*csv or .*(jpe?g|png|tiff) or .\w+-\d+.text'
         validators:
           - regexp
@@ -66,20 +66,20 @@ ImportStorage:
         fields:
           - type: toggle
             name: use_blob_urls
-            label: Treat every bucket object as a source file
-            description: If unchecked, treat every bucket object as a JSON-formatted task. Optional
+            label: 将每个bucket对象视为源文件
+            description: 如果未选中，则将每个bucket对象视为JSON格式的任务。可选
           - type: toggle
             name: recursive_scan
-            label: Recursive scan
-            description: Perform recursive scan over the bucket content
+            label: 递归扫描
+            description: 对存储桶内容执行递归扫描
       - fields:
           - type: toggle
             name: presign
-            label: Use pre-signed URLs
+            label: 使用预先签名的URL
             value: true
           - type: counter
             name: presign_ttl
-            label: Expiration minutes
+            label: 过期分钟数
             min: 1
             value: 1
             dependency: presign

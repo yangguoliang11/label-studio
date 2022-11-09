@@ -364,7 +364,7 @@ stages:
     data:
       label_config: <View><Image name="image" value="$image"/><Choices name="label" toName="image"><Choice
         value="Cat"/><Choice value="Dog"/></Choices></View>
-      title: Image Classification Project
+      title: 图像分类 Project
     method: POST
     url: '{django_live_url}/api/projects'
   response:
@@ -449,7 +449,7 @@ stages:
     data:
       label_config: <View><Image name="image" value="$image"/><Choices name="label" toName="image"><Choice
         value="Cat"/><Choice value="Dog"/></Choices></View>
-      title: Image Classification Project
+      title: 图像分类 Project
     method: POST
     url: '{django_live_url}/api/projects'
   response:
@@ -522,7 +522,7 @@ stages:
     data:
       label_config: <View><Image name="image" value="$image"/><RectangleLabels name="objects" toName="image" choices="multiple"><Label
         value="Cat"/><Label value="Dog"/></RectangleLabels></View>
-      title: Image Classification Project
+      title: 图像分类 Project
     method: POST
     url: '{django_live_url}/api/projects'
   response:
@@ -583,7 +583,7 @@ stages:
     data:
       label_config: <View><Image name="image" value="$image"/><Choices name="label" toName="image"><Choice
         value="AAA"/><Choice value="BBB"/></Choices></View>
-      title: Image Classification Project
+      title: 图像分类 Project
     method: POST
     url: '{django_live_url}/api/projects'
   response:
@@ -687,7 +687,7 @@ stages:
     data:
       label_config: <View><Image name="image" value="$image"/><RectangleLabels name="objects" toName="image" choices="multiple"><Label
         value="Cat"/><Label value="Dog"/></RectangleLabels></View>
-      title: Image Classification Project
+      title: 图像分类 Project
     method: POST
     url: '{django_live_url}/api/projects'
   response:

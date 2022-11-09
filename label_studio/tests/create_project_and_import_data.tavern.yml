@@ -21,7 +21,7 @@ stages:
     headers:
       content-type: application/json
     json:
-      label_config: '<View><Header value="Select label and click the image to start"/><Image name="image" value="$image" zoom="true"/><PolygonLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
+      label_config: '<View><Header value="选择标签并单击图像开始"/><Image name="image" value="$image" zoom="true"/><PolygonLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
     method: PATCH
     url: '{django_live_url}/api/projects/{pk}'
   response:
@@ -73,7 +73,7 @@ stages:
     headers:
       content-type: application/json
     json:
-      label_config: '<View><Header value="Select label and click the image to start"/><Image name="image" value="$image" zoom="true"/><BrushLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
+      label_config: '<View><Header value="选择标签并单击图像开始"/><Image name="image" value="$image" zoom="true"/><BrushLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
     method: PATCH
     url: '{django_live_url}/api/projects/{pk}'
   response:
@@ -125,7 +125,7 @@ stages:
     headers:
       content-type: application/json
     json:
-      label_config: '<View><Header value="Select label and click the image to start"/><Image name="image" value="$image" zoom="true"/><EllipseLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
+      label_config: '<View><Header value="选择标签并单击图像开始"/><Image name="image" value="$image" zoom="true"/><EllipseLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
     method: PATCH
     url: '{django_live_url}/api/projects/{pk}'
   response:
@@ -177,7 +177,7 @@ stages:
     headers:
       content-type: application/json
     json:
-      label_config: '<View><Header value="Select label and click the image to start"/><Image name="image" value="$image" zoom="true"/><HyperTextLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
+      label_config: '<View><Header value="选择标签并单击图像开始"/><Image name="image" value="$image" zoom="true"/><HyperTextLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
     method: PATCH
     url: '{django_live_url}/api/projects/{pk}'
   response:
@@ -229,7 +229,7 @@ stages:
     headers:
       content-type: application/json
     json:
-      label_config: '<View><Header value="Select label and click the image to start"/><Image name="image" value="$image" zoom="true"/><KeyPointLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
+      label_config: '<View><Header value="选择标签并单击图像开始"/><Image name="image" value="$image" zoom="true"/><KeyPointLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
     method: PATCH
     url: '{django_live_url}/api/projects/{pk}'
   response:
@@ -281,7 +281,7 @@ stages:
     headers:
       content-type: application/json
     json:
-      label_config: '<View><Header value="Select label and click the image to start"/><Image name="image" value="$image" zoom="true"/><ParagraphLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
+      label_config: '<View><Header value="选择标签并单击图像开始"/><Image name="image" value="$image" zoom="true"/><ParagraphLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
     method: PATCH
     url: '{django_live_url}/api/projects/{pk}'
   response:
@@ -333,7 +333,7 @@ stages:
     headers:
       content-type: application/json
     json:
-      label_config: '<View><Header value="Select label and click the image to start"/><Image name="image" value="$image" zoom="true"/><RectangleLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
+      label_config: '<View><Header value="选择标签并单击图像开始"/><Image name="image" value="$image" zoom="true"/><RectangleLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
     method: PATCH
     url: '{django_live_url}/api/projects/{pk}'
   response:
@@ -385,7 +385,7 @@ stages:
     headers:
       content-type: application/json
     json:
-      label_config: '<View><Header value="Select label and click the image to start"/><Image name="image" value="$image" zoom="true"/><TimeSeriesLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
+      label_config: '<View><Header value="选择标签并单击图像开始"/><Image name="image" value="$image" zoom="true"/><TimeSeriesLabels name="label" toName="image" strokeWidth="3" pointSize="small" opacity="0.9" value="$options"/></View>'
     method: PATCH
     url: '{django_live_url}/api/projects/{pk}'
   response:

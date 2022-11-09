@@ -2,14 +2,14 @@
 title_bucket_prefix: &title_bucket_prefix
   - type: text
     name: title
-    label: Storage Title
+    label: 存储标题
   - type: text
     name: bucket
-    label: Bucket Name
+    label: Bucket名称
     required: true
   - type: text
     name: prefix
-    label: Bucket Prefix
+    label: Bucket前缀
 
 gcs_credentials: &gcs_credentials
   - type: password
@@ -31,7 +31,7 @@ ImportStorage:
     fields:
       - type: text
         name: regex_filter
-        label: File Filter Regex
+        label: 文件筛选器Regex
         placeholder: '.*csv or .*(jpe?g|png|tiff) or .\w+-\d+.text'
         validators:
           - regexp
@@ -43,16 +43,16 @@ ImportStorage:
         fields:
           - type: toggle
             name: use_blob_urls
-            label: Treat every bucket object as a source file
-            description: If unchecked, treat every bucket object as a JSON-formatted task. Optional
+            label: 将每个bucket对象视为源文件
+            description: 如果未选中，则将每个bucket对象视为JSON格式的任务。可选
       - fields:
           - type: toggle
             name: presign
-            label: Use pre-signed URLs
+            label: 使用预先签名的URL
             value: true
           - type: counter
             name: presign_ttl
-            label: Expiration minutes
+            label: 过期分钟数
             min: 1
             value: 1
             dependency: presign

@@ -24,7 +24,7 @@ const ProjectName = ({ name, setName, onSaveName, onSubmit, error, description, 
       <textarea
         name="description"
         id="project_description"
-        placeholder="Optional description of your project"
+        placeholder="选择此处可以描述您的项目"
         rows="4"
         value={description}
         onChange={e => setDescription(e.target.value)}
@@ -117,7 +117,7 @@ export const CreateProject = ({ onClose }) => {
     <Modal onHide={onDelete} fullscreen visible bare closeOnClickOutside={false}>
       <div className={rootClass}>
         <Modal.Header>
-          <h1>Create Project</h1>
+          <h1>创建项目</h1>
           <ToggleItems items={steps} active={step} onSelect={setStep} />
 
           <Space>

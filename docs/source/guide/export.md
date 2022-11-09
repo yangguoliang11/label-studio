@@ -126,15 +126,15 @@ A popular format used for the [CoNLL-2003 named entity recognition challenge](ht
 
 ### CSV
 
-Results are stored as comma-separated values with the column names specified by the values of the `"from_name"` and `"to_name"` fields in the labeling configuration. Supports all project types.
+结果以逗号分隔的值存储，列名由“from_name”和“to_name”字段的值指定。
 
 ### JSON
 
-List of items in [raw JSON format](#Label-Studio-JSON-format-of-annotated-tasks) stored in one JSON file. Use this format to export both the data and the annotations for a dataset. Supports all project types.
+存储在一个JSON文件中的原始JSON格式的项目列表。用于导出数据集的数据和注释。这是Label Studio通用格式
 
 ### JSON_MIN
 
-List of items where only `"from_name", "to_name"` values from the [raw JSON format](#Label-Studio-JSON-format-of-annotated-tasks) are exported. Use this format to export the annotations and the data for a dataset, and no Label-Studio-specific fields. Supports all project types.
+仅导出原始JSON格式的“from_name”和“to_name”值的项目列表。用于仅导出数据集的注释。
 
 For example: 
 ```json
@@ -182,7 +182,7 @@ To transform Label Studio annotations into spaCy binary format, do the following
 
 ### TSV
 
-Results are stored in a tab-separated tabular file with column names specified by `"from_name"` and `"to_name"` values in the labeling configuration. Supports all project types.
+结果存储在制表符分隔的表格文件中，列名由“from_name”“to_name”值指定。
 
 ### YOLO
 

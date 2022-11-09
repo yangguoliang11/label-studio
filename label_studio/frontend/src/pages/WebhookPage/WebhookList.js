@@ -33,7 +33,7 @@ const WebhookList = ({ onSelectActive, onAddWebhook, webhooks, fetchWebhooks }) 
   return <Block name='webhook'>
     <Elem name='controls'>
       <Button onClick={onAddWebhook}>
-        Add Webhook
+        添加webhook
       </Button>
     </Elem>
     <Elem>
@@ -55,7 +55,7 @@ const WebhookList = ({ onSelectActive, onAddWebhook, webhooks, fetchWebhooks }) 
                   {obj.url}
                 </Elem>
                 <Elem name='item-date'>
-                  Created {format(new Date(obj.created_at), 'dd MMM yyyy, HH:mm')}
+                  创建于 {format(new Date(obj.created_at), 'dd MMM yyyy, HH:mm')}
                 </Elem>
                 <Elem name='item-control'>
                   <Button

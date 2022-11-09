@@ -1,10 +1,10 @@
 ---
-title: Multi-Image Classification
+title: Multi-图像分类
 type: templates
 category: Computer Vision
 cat: computer-vision
 order: 111
-meta_title: Multi-Image Classification Data Labeling Template
+meta_title: Multi-图像分类 Data Labeling Template
 meta_description: Template for classifying multiple images at once with Label Studio for your machine learning and data science projects.
 ---
 
@@ -124,4 +124,4 @@ The Choices tag `toName` value references `img-left` so that all annotations are
 - [Choices](/tags/choices.html)
 
 ## Related templates
-- [Image Classification](image_classification.html)
+- [图像分类](image_classification.html)

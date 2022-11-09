@@ -27,7 +27,7 @@ export const StorageSet = ({title, target, rootClass, buttonLabel}) => {
 
   const fetchStorages = useCallback(async () => {
     if (!project.id) {
-      console.warn("Project ID not provided");
+      console.warn("项目ID未提供");
       return;
     }
 
@@ -56,9 +56,9 @@ export const StorageSet = ({title, target, rootClass, buttonLabel}) => {
   }, [project]);
 
   const showStorageFormModal = useCallback((storage) => {
-    const action = storage ? "Edit" : "Add";
-    const actionTarget = target === 'export' ? 'Target' : 'Source';
-    const title = `${action} ${actionTarget} Storage`;
+    const action = storage ? "编辑" : "添加";
+    const actionTarget = target === 'export' ? '目标' : '源';
+    const title = `${action} ${actionTarget} 存储`;
 
     const modalRef = modal({
       title,
@@ -79,7 +79,7 @@ export const StorageSet = ({title, target, rootClass, buttonLabel}) => {
       ),
       footer: (
         <>
-          Save completed annotations to Amazon S3, Google Cloud, Microsoft Azure, or Redis.
+          将完成的注释保存到Amazon S3、Google Cloud、Microsoft Azure或Redis。
           <br/>
           <a href="https://labelstud.io/guide/storage.html">See more in the documentation</a>.
         </>
@@ -93,8 +93,8 @@ export const StorageSet = ({title, target, rootClass, buttonLabel}) => {
 
   const onDeleteStorage = useCallback(async (storage) => {
     confirm({
-      title: "Deleting storage",
-      body: "This action cannot be undone. Are you sure?",
+      title: "删除存储",
+      body: "该行为不可修复,确认？",
       buttonLook: "destructive",
       onOk: async () => {
         const response = await api.callApi('deleteStorage', {

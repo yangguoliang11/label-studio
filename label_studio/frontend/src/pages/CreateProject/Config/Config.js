@@ -44,11 +44,9 @@ const configClass = cn("configure");
 
 const EmptyConfigPlaceholder = () => (
   <div className={configClass.elem("empty-config")}>
-    <p>Your labeling configuration is empty. It is required to label your data.</p>
+    <p>您的标签配置为空。需要为数据添加标签。</p>
     <p>
-      Start from one of our predefined templates or create your own config on the Code panel.
-      The labeling config is XML-based and you can <a href="https://labelstud.io/tags/" target="_blank">read about the available tags in our documentation</a>.
-    </p>
+    从我们预定义的模板之一开始，或者在“代码”面板上创建自己的配置。标签配置基于XML，您可以阅读我们文档中的可用标签。</p>
   </div>
 );
 
@@ -192,7 +190,7 @@ const ConfigureSettings = ({ template }) => {
   return (
     <ul className={configClass.elem("settings")}>
       <li>
-        <h4>Configure settings</h4>
+        <h4>配置设置</h4>
         <ul className={configClass.elem("object-settings")}>
           {items}
         </ul>
@@ -392,9 +390,9 @@ const Configurator = ({ columns, config, project, template, setTemplate, onBrows
 
   const extra = (
     <p className={configClass.elem('tags-link')}>
-      Configure the labeling interface with tags.
+      使用标签配置标签界面.
       <br/>
-      <a href="https://labelstud.io/tags/" target="_blank">See all available tags</a>
+      <a href="https://labelstud.io/tags/" target="_blank">查看所有可用标记</a>
       .
     </p>
   );
@@ -403,8 +401,8 @@ const Configurator = ({ columns, config, project, template, setTemplate, onBrows
     <div className={configClass}>
       <div className={configClass.elem("container")}>
         <header>
-          <button onClick={onBrowse}>Browse Templates</button>
-          <ToggleItems items={{ code: "Code", visual: "Visual" }} active={configure} onSelect={onSelect} />
+          <button onClick={onBrowse}>浏览模板</button>
+          <ToggleItems items={{ code: "代码", visual: "可视化" }} active={configure} onSelect={onSelect} />
         </header>
         <div className={configClass.elem('editor')}>
           {configure === "code" && (
@@ -431,7 +429,7 @@ const Configurator = ({ columns, config, project, template, setTemplate, onBrows
         {disableSaveButton !== true && onSaveClick && (
           <Form.Actions size="small" extra={configure === "code" && extra} valid>
             <Button look="primary" size="compact" style={{ width: 120 }} onClick={onSave} waiting={waiting}>
-              {waiting ? "Saving..." : "Save"}
+              {waiting ? "保存中..." : "保存"}
             </Button>
           </Form.Actions>
         )}

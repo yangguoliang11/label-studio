@@ -51,7 +51,7 @@ class S3StorageMixin(models.Model):
         help_text='AWS Region')
     s3_endpoint = models.TextField(
         _('s3_endpoint'), null=True, blank=True,
-        help_text='S3 Endpoint')
+        help_text='S3端点')
 
     def get_client_and_resource(self):
         # s3 client initialization ~ 100 ms, for 30 tasks it's a 3 seconds, so we need to cache it
@@ -113,7 +113,7 @@ class S3ImportStorage(S3StorageMixin, ImportStorage):
         help_text='Presigned URLs TTL (in minutes)')
     recursive_scan = models.BooleanField(
         _('recursive scan'), default=False,
-        help_text=_('Perform recursive scan over the bucket content'))
+        help_text=_('对存储桶内容执行递归扫描'))
 
     def iterkeys(self):
         client, bucket = self.get_client_and_bucket()

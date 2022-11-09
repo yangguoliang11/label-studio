@@ -14,7 +14,7 @@ export const Menu = forwardRef(
     }, [selectedKeys]);
 
     const clickHandler = useCallback((e) => {
-      const elem = cn('main-menu').elem('item').closest(e.target);
+      const elem = cn('').elem('item').closest(e.target);
 
       if (dropdown && elem && closeDropdownOnItemClick !== false) {
         dropdown.close();

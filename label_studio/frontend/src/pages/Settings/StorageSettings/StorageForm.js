@@ -36,7 +36,7 @@ export const StorageForm = forwardRef(({
     skip: true,
     type: "select",
     name: "storage_type",
-    label: "Storage Type",
+    label: "存储类型",
     disabled: !!storage,
     options: storageTypes.map(({ name, title }) => ({
       value: name, label: title,
@@ -105,9 +105,9 @@ export const StorageForm = forwardRef(({
         <Input type="hidden" name="project" value={project}/>
         <Button.Group className={rootClass.elem('buttons')}>
           <Button type="button" waiting={checking} onClick={validateStorageConnection}>
-            Check Connection
+            检查连接状态
           </Button>
-          <Button type="submit" look="primary">{storage ? "Save" : "Add Storage"}</Button>
+          <Button type="submit" look="primary">{storage ? "保存" : "添加存储"}</Button>
         </Button.Group>
       </Form.Actions>
 

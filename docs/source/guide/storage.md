@@ -101,22 +101,22 @@ After you [configure access to your S3 bucket](#Configure-access-to-your-S3-buck
 
 1. Open Label Studio in your web browser.
 2. For a specific project, open **Settings > Cloud Storage**.
-3. Click **Add Source Storage**.  
+3. Click **添加源存储**.  
 4. In the dialog box that appears, select **Amazon S3** as the storage type.
-5. In the **Storage Title** field, type a name for the storage to appear in the Label Studio UI.
+5. In the **存储标题** field, type a name for the storage to appear in the Label Studio UI.
 6. Specify the name of the S3 bucket, and if relevant, the bucket prefix to specify an internal folder or container.
 7. Adjust the remaining parameters:
-    - In the **File Filter Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
-    - In the **Region Name** field, specify the AWS region name. For example `us-east-1`.
-    - (Optional) In the **S3 Endpoint** field, specify an S3 endpoint if you want to override the URL created by S3 to access your bucket.
-    - In the **Access Key ID** field, specify the access key ID of the temporary security credentials for an AWS account with access to your S3 bucket.
-    - In the **Secret Access Key** field, specify the secret key of the temporary security credentials for an AWS account with access to your S3 bucket.
-    - In the **Session Token** field, specify a session token of the temporary security credentials for an AWS account with access to your S3 bucket.
-    - (Optional) Enable **Treat every bucket object as a source file** if your bucket contains BLOB storage files such as JPG, MP3, or similar file types. This setting creates a URL for each bucket object to use for labeling. Leave this option disabled if you have multiple JSON files in the bucket with one task per JSON file.
-    - (Optional) Enable **Recursive scan** to perform recursive scans over the bucket contents if you have nested folders in your S3 bucket.
-    - Choose whether to disable **Use pre-signed URLs**. For example, if you host Label Studio in the same AWS network as your storage buckets, you can disable presigned URLs and have direct access to the storage using `s3://` links.
+    - In the **文件筛选器Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
+    - In the **地区名称** field, specify the AWS region name. For example `us-east-1`.
+    - (Optional) In the **S3端点** field, specify an S3 endpoint if you want to override the URL created by S3 to access your bucket.
+    - In the **访问密钥ID** field, specify the access key ID of the temporary security credentials for an AWS account with access to your S3 bucket.
+    - In the **秘密访问密钥** field, specify the secret key of the temporary security credentials for an AWS account with access to your S3 bucket.
+    - In the **会话令牌** field, specify a session token of the temporary security credentials for an AWS account with access to your S3 bucket.
+    - (Optional) Enable **将每个bucket对象视为源文件** if your bucket contains BLOB storage files such as JPG, MP3, or similar file types. This setting creates a URL for each bucket object to use for labeling. Leave this option disabled if you have multiple JSON files in the bucket with one task per JSON file.
+    - (Optional) Enable **递归扫描** to perform recursive scans over the bucket contents if you have nested folders in your S3 bucket.
+    - Choose whether to disable **使用预先签名的URL**. For example, if you host Label Studio in the same AWS network as your storage buckets, you can disable presigned URLs and have direct access to the storage using `s3://` links.
     - Adjust the counter for how many minutes the pre-signed URLs are valid.
-8. Click **Add Storage**.
+8. Click **添加存储**.
 
 After adding the storage, click **Sync** to collect tasks from the bucket, or make an API call to [sync import storage](/api#operation/api_storages_s3_sync_create).
 
@@ -127,16 +127,16 @@ After you [configure access to your S3 bucket](#Configure-access-to-your-S3-buck
 2. For a specific project, open **Settings > Cloud Storage**.
 3. Click **Add Target Storage**.  
 4. In the dialog box that appears, select **Amazon S3** as the storage type.
-5. In the **Storage Title** field, type a name for the storage to appear in the Label Studio UI.
+5. In the **存储标题** field, type a name for the storage to appear in the Label Studio UI.
 6. Specify the name of the S3 bucket, and if relevant, the bucket prefix to specify an internal folder or container.
 7. Adjust the remaining parameters:
-    - In the **Region Name** field, specify the AWS region name. For example `us-east-1`.
-    - (Optional) In the **S3 Endpoint** field, specify an S3 endpoint if you want to override the URL created by S3 to access your bucket.
-    - In the **Access Key ID** field, specify the access key ID of the temporary security credentials for an AWS account with access to your S3 bucket.
-    - In the **Secret Access Key** field, specify the secret key of the temporary security credentials for an AWS account with access to your S3 bucket.
-    - In the **Session Token** field, specify a session token of the temporary security credentials for an AWS account with access to your S3 bucket.
+    - In the **地区名称** field, specify the AWS region name. For example `us-east-1`.
+    - (Optional) In the **S3端点** field, specify an S3 endpoint if you want to override the URL created by S3 to access your bucket.
+    - In the **访问密钥ID** field, specify the access key ID of the temporary security credentials for an AWS account with access to your S3 bucket.
+    - In the **秘密访问密钥** field, specify the secret key of the temporary security credentials for an AWS account with access to your S3 bucket.
+    - In the **会话令牌** field, specify a session token of the temporary security credentials for an AWS account with access to your S3 bucket.
     - <i class='ent'></i> (Optional) Enable **Can delete objects from storage** if you want to delete annotations stored in the S3 bucket when they are deleted in Label Studio. The storage credentials associated with the bucket must include the ability to delete bucket objects. Leave disabled to not take any action on annotations if they are deleted in Label Studio. 
-8. Click **Add Storage**.
+8. Click **添加存储**.
 
 After adding the storage, click **Sync** to collect tasks from the bucket, or make an API call to [sync export storage](/api#operation/api_storages_export_s3_sync_create).
 
@@ -227,21 +227,21 @@ In the Label Studio UI, do the following to set up the connection:
 
 1. Open Label Studio in your web browser.
 2. For a specific project, open **Settings > Cloud Storage**.
-3. Click **Add Source Storage**.  
+3. Click **添加源存储**.  
 4. In the dialog box that appears, select **Amazon S3 (IAM role access)** as the storage type.
-5. In the **Storage Title** field, type a name for the storage to appear in the Label Studio UI.
+5. In the **存储标题** field, type a name for the storage to appear in the Label Studio UI.
 6. Specify the name of the S3 bucket, and if relevant, the bucket prefix to specify an internal folder or container.
 7. Adjust the remaining parameters:
-    - In the **File Filter Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
-    - In the **Region Name** field, specify the AWS region name. For example `us-east-1`.
-    - In the **S3 Endpoint** field, specify an S3 endpoint if you want to override the URL created by S3 to access your bucket.
+    - In the **文件筛选器Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
+    - In the **地区名称** field, specify the AWS region name. For example `us-east-1`.
+    - In the **S3端点** field, specify an S3 endpoint if you want to override the URL created by S3 to access your bucket.
     - In the **Role ARN** field, specify the Amazon Resource Name (ARN) of the IAM role that you created to grant access to Label Studio.
     - In the **External ID** field, specify the external ID that identifies Label Studio to your AWS account. You can find the external ID on your **Organization** page.
-    - Enable **Treat every bucket object as a source file** if your bucket contains BLOB storage files such as JPG, MP3, or similar file types. This setting creates a URL for each bucket object to use for labeling. Leave this option disabled if you have multiple JSON files in the bucket with one task per JSON file.
-    - Enable **Recursive scan** to perform recursive scans over the bucket contents if you have nested folders in your S3 bucket.
-    - Choose whether to disable **Use pre-signed URLs**. For example, if you host Label Studio in the same AWS network as your storage buckets, you can disable presigned URLs and have direct access to the storage using `s3://` links.
+    - Enable **将每个bucket对象视为源文件** if your bucket contains BLOB storage files such as JPG, MP3, or similar file types. This setting creates a URL for each bucket object to use for labeling. Leave this option disabled if you have multiple JSON files in the bucket with one task per JSON file.
+    - Enable **递归扫描** to perform recursive scans over the bucket contents if you have nested folders in your S3 bucket.
+    - Choose whether to disable **使用预先签名的URL**. For example, if you host Label Studio in the same AWS network as your storage buckets, you can disable presigned URLs and have direct access to the storage using `s3://` links.
     - Adjust the counter for how many minutes the pre-signed URLs are valid.
-8. Click **Add Storage**.
+8. Click **添加存储**.
 
 After adding the storage, click **Sync** to collect tasks from the bucket, or make an API call to [sync import storage](https://app.heartex.com/docs/api#operation/api_storages_s3s_sync_create).
 
@@ -252,15 +252,15 @@ In the Label Studio UI, do the following to set up a target storage connection t
 2. For a specific project, open **Settings > Cloud Storage**.
 3. Click **Add Target Storage**.  
 4. In the dialog box that appears, select **Amazon S3 (IAM role access)** as the storage type.
-5. In the **Storage Title** field, type a name for the storage to appear in the Label Studio UI.
+5. In the **存储标题** field, type a name for the storage to appear in the Label Studio UI.
 6. Specify the name of the S3 bucket, and if relevant, the bucket prefix to specify an internal folder or container.
 7. Adjust the remaining parameters:
-    - In the **Region Name** field, specify the AWS region name. For example `us-east-1`.
-    - In the **S3 Endpoint** field, specify an S3 endpoint if you want to override the URL created by S3 to access your bucket.
+    - In the **地区名称** field, specify the AWS region name. For example `us-east-1`.
+    - In the **S3端点** field, specify an S3 endpoint if you want to override the URL created by S3 to access your bucket.
     - In the **Role ARN** field, specify the Amazon Resource Name (ARN) of the IAM role that you created to grant access to Label Studio.
     - In the **External ID** field, specify the external ID that identifies Label Studio to your AWS account. You can find the external ID on your **Organization** page.
     - (Optional) Enable **Can delete objects from storage** if you want to delete annotations stored in the S3 bucket when they are deleted in Label Studio. The storage credentials associated with the bucket must include the ability to delete bucket objects. Leave disabled to not take any action on annotations if they are deleted in Label Studio.
-8. Click **Add Storage**.
+8. Click **添加存储**.
 
 After adding the storage, click **Sync** to collect tasks from the bucket, or make an API call to [sync export storage](https://app.heartex.com/docs/api#operation/api_storages_export_s3s_sync_create).
 
@@ -285,20 +285,20 @@ In the Label Studio UI, do the following to set up the connection:
 
 1. Open Label Studio in your web browser.
 2. For a specific project, open **Settings > Cloud Storage**.
-3. Click **Add Source Storage**.  
+3. Click **添加源存储**.  
 4. In the dialog box that appears, select **Google Cloud Storage** as the storage type.
-5. In the **Storage Title** field, type a name for the storage to appear in the Label Studio UI.
+5. In the **存储标题** field, type a name for the storage to appear in the Label Studio UI.
 6. Specify the name of the GCS bucket, and if relevant, the bucket prefix to specify an internal folder or container.
 7. Adjust the remaining optional parameters:
-    - In the **File Filter Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
-    - Enable **Treat every bucket object as a source file** if your bucket contains BLOB storage files such as JPG, MP3, or similar file types. This setting creates a URL for each bucket object to use for labeling, such as `gs://my-gcs-bucket/image.jpg`. Leave this option disabled if you have multiple JSON files in the bucket with one task per JSON file.
-    - Choose whether to disable **Use pre-signed URLs**. For example, if you host Label Studio in the same network as your storage buckets, you can disable presigned URLs and have direct access to the storage.
+    - In the **文件筛选器Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
+    - Enable **将每个bucket对象视为源文件** if your bucket contains BLOB storage files such as JPG, MP3, or similar file types. This setting creates a URL for each bucket object to use for labeling, such as `gs://my-gcs-bucket/image.jpg`. Leave this option disabled if you have multiple JSON files in the bucket with one task per JSON file.
+    - Choose whether to disable **使用预先签名的URL**. For example, if you host Label Studio in the same network as your storage buckets, you can disable presigned URLs and have direct access to the storage.
     - Adjust the counter for how many minutes the pre-signed URLs are valid.
 8. In the **Google Application Credentials** field, add a JSON file with the GCS credentials you created to manage authentication for your bucket. You can also use the `GOOGLE_APPLICATION_CREDENTIALS` environment variable to specify this file. For example:
 ```bash
   export GOOGLE_APPLICATION_CREDENTIALS=json-file-with-GCP-creds-23441-8f8sd99vsd115a.json
   ```
-9. Click **Add Storage**.
+9. Click **添加存储**.
 10. Repeat these steps for **Target Storage** to sync completed data annotations to a bucket.
 
 After adding the storage, click **Sync** to collect tasks from the bucket, or make an API call to [sync import storage](/api#operation/api_storages_gcs_sync_create).
@@ -324,18 +324,18 @@ In the Label Studio UI, do the following to set up the connection:
 
 1. Open Label Studio in your web browser.
 2. For a specific project, open **Settings > Cloud Storage**.
-3. Click **Add Source Storage**.  
+3. Click **添加源存储**.  
 4. In the dialog box that appears, select **Microsoft Azure** as the storage type.
-5. In the **Storage Title** field, type a name for the storage to appear in the Label Studio UI.
+5. In the **存储标题** field, type a name for the storage to appear in the Label Studio UI.
 6. Specify the name of the Azure Blob container, and if relevant, the container prefix to specify an internal folder or container.
 7. Adjust the remaining optional parameters:
-    - In the **File Filter Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
+    - In the **文件筛选器Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
     - In the **Account Name** field, specify the account name for the Azure storage. You can also set this field as an environment variable,`AZURE_BLOB_ACCOUNT_NAME`.
     - In the **Account Key** field, specify the secret key to access the storage account. You can also set this field as an environment variable,`AZURE_BLOB_ACCOUNT_KEY`.
-    - Enable **Treat every bucket object as a source file** if your bucket contains BLOB storage files such as JPG, MP3, or similar file types. This setting creates a URL for each bucket object to use for labeling, for example `azure-blob://container-name/image.jpg`. Leave this option disabled if you have multiple JSON files in the bucket with one task per JSON file. 
-    - Choose whether to disable **Use pre-signed URLs**, or [shared access signatures](https://docs.microsoft.com/en-us/rest/api/storageservices/delegate-access-with-shared-access-signature). For example, if you host Label Studio in the same network as your storage containers, you can disable presigned URLs and have direct access to the storage.
+    - Enable **将每个bucket对象视为源文件** if your bucket contains BLOB storage files such as JPG, MP3, or similar file types. This setting creates a URL for each bucket object to use for labeling, for example `azure-blob://container-name/image.jpg`. Leave this option disabled if you have multiple JSON files in the bucket with one task per JSON file. 
+    - Choose whether to disable **使用预先签名的URL**, or [shared access signatures](https://docs.microsoft.com/en-us/rest/api/storageservices/delegate-access-with-shared-access-signature). For example, if you host Label Studio in the same network as your storage containers, you can disable presigned URLs and have direct access to the storage.
     - Adjust the counter for how many minutes the shared access signatures are valid.
-8. Click **Add Storage**.
+8. Click **添加存储**.
 9. Repeat these steps for **Target Storage** to sync completed data annotations to a container.
 
 After adding the storage, click **Sync** to collect tasks from the container, or make an API call to [sync import storage](/api#operation/api_storages_azure_sync_create).
@@ -358,16 +358,16 @@ In the Label Studio UI, do the following to set up the connection:
 
 1. Open Label Studio in your web browser.
 2. For a specific project, open **Settings > Cloud Storage**.
-3. Click **Add Source Storage**.   
+3. Click **添加源存储**.   
 4. In the dialog box that appears, select **Redis Database** as the storage type.
 5. Update the Redis configuration parameters:
     - In the **Path** field, specify the path to the database. Used as the keys prefix, values under this path are scanned for tasks.
     - In the **Password** field, specify the server password. 
     - In the **Host** field, specify the IP of the server hosting the database, or `localhost`. 
     - In the **Port** field, specify the port that you can use to access the database. 
-    - In the **File Filter Regex** field, specify a regular expression to filter database objects. Use `.*` to collect all objects.
-    - Enable **Treat every bucket object as a source file** if your database contains files such as JPG, MP3, or similar file types. This setting creates a URL for each database object to use for labeling. Leave this option disabled if you have multiple JSON files in the database, with one task per JSON file. 
-8. Click **Add Storage**.
+    - In the **文件筛选器Regex** field, specify a regular expression to filter database objects. Use `.*` to collect all objects.
+    - Enable **将每个bucket对象视为源文件** if your database contains files such as JPG, MP3, or similar file types. This setting creates a URL for each database object to use for labeling. Leave this option disabled if you have multiple JSON files in the database, with one task per JSON file. 
+8. Click **添加存储**.
 9. Repeat these steps for **Target Storage** to sync completed data annotations to a database.
 
 After adding the storage, click **Sync** to collect tasks from the database, or make an API call to [sync import storage](/api#operation/api_storages_redis_sync_create).
@@ -406,17 +406,17 @@ In the Label Studio UI, do the following to set up the connection:
 
 1. Open Label Studio in your web browser.
 2. For a specific project, open **Settings > Cloud Storage**.
-3. Click **Add Source Storage**.
+3. Click **添加源存储**.
    <img src="/images/local-storage-settings.png" alt="Screenshot of the storage settings modal described in the preceding steps." width=670 height=490 style="border: 1px solid #eee">
 4. In the dialog box that appears, select **Local Files** as the storage type.
-5. In the **Storage Title** field, type a name for the storage to appear in the Label Studio UI.
+5. In the **存储标题** field, type a name for the storage to appear in the Label Studio UI.
 5. Specify an **Absolute local path** to the directory with your files. The local path must be an absolute path and include the `LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT` value. 
    For example, if `LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/home/user`, then your local path must be `/home/user/dataset1`. For more about that environment variable, see [Run Label Studio on Docker and use local storage](start.html#Run_Label_Studio_on_Docker_and_use_local_storage).    
-6. (Optional) In the **File Filter Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
-7. (Optional) Toggle **Treat every bucket object as a source file**. 
+6. (Optional) In the **文件筛选器Regex** field, specify a regular expression to filter bucket objects. Use `.*` to collect all objects.
+7. (Optional) Toggle **将每个bucket对象视为源文件**. 
    - Enable this option if you want to create Label Studio tasks from media files automatically, such as JPG, MP3, or similar file types. Use this option for labeling configurations with one source tag.
    - Disable this option if you want to import tasks in Label Studio JSON format directly from your storage. Use this option for complex labeling configurations with HyperText or multiple source tags.    
-8. Click **Add Storage**.
+8. Click **添加存储**.
 9. Repeat these steps for **Add Target Storage** to use a local file directory for exporting.
 
 After adding the storage, click **Sync** to collect tasks from the bucket, or make an API call to [sync import storage](/api#operation/api_storages_localfiles_sync_create).
@@ -465,7 +465,7 @@ Check your web browser console for errors.
     [default]
     region=us-east-2  # change to the region of your bucket
     ```
-- For Amazon S3, make sure that the credentials that you used to set up the source or target storage connection are still valid. If you see 403 errors in the browser console, and you set up the correct permissions for the bucket, you might need to update the Access Key ID, Secret Access Key, and Session ID. See the AWS Identity and Access Management documentation on [Requesting temporary security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html). 
+- For Amazon S3, make sure that the credentials that you used to set up the source or target storage connection are still valid. If you see 403 errors in the browser console, and you set up the correct permissions for the bucket, you might need to update the 访问密钥ID, 秘密访问密钥, and Session ID. See the AWS Identity and Access Management documentation on [Requesting temporary security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html). 
 
 ### Tasks or annotations do not sync
 
@@ -481,4 +481,4 @@ If you're pressing the **Sync** button but tasks do not sync, or you can't see t
 
 If the tasks sync to Label Studio but don't appear the way that you expect, maybe with URLs instead of images or with one task where you expect to see many, check the following:
 - If you're placing JSON files in [cloud storage](storage.html), place 1 task in each JSON file in the storage bucket. If you want to upload a JSON file from local storage into Label Studio, you can place multiple tasks in one JSON file. 
-- If you're syncing image or audio files, make sure **Treat every bucket object as a source file** is enabled. 
+- If you're syncing image or audio files, make sure **将每个bucket对象视为源文件** is enabled. 

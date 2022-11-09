@@ -104,7 +104,7 @@ def convert_to_ls(image, tesseract_output, per_level='block_num'):
     :param image: PIL image object
     :param tesseract_output: the output from tesseract
     :param per_level: control the granularity of bboxes from tesseract
-    :return: tasks.json ready to be imported into Label Studio with "Optical Character Recognition" template
+    :return: tasks.json ready to be imported into Label Studio with "OCR" template
     """
     image_width, image_height = image.size
     per_level_idx = LEVELS[per_level]
@@ -200,7 +200,7 @@ After you've processed the images with Tesseract and Python, you can start worki
 1. [Install Label Studio](/guide/install.html) using your preferred method. If you install Label Studio using Docker, [set environment variables to access the image files](/guide/start.html#Run-Label-Studio-on-Docker-and-use-local-storage).
 2. [Create a project](/guide/setup_project.html) called `OCR Receipts` to manage the results.
 3. Import the `ocr_tasks.json` file from the `tesseractocr.py` script run. 
-4. Select the **Optical Character Recognition** template for your labeling interface. If you want, change the region labels to describe product names and prices, or leave the template with the default region labels of Text and Handwriting. 
+4. Select the **OCR** template for your labeling interface. If you want, change the region labels to describe product names and prices, or leave the template with the default region labels of Text and Handwriting. 
 5. Adjust the data manager fields to show the **Prediction score** on the UI and sort the prediction scores to view the lowest score images first.
 
 <br/><img src="/images/ocr-blog/OCR-low-prediction-score-sort.png" alt="Screenshot of the data manager in Label Studio showing the OCR images sorted by prediction score." class="gif-border" width="800px" height="429px"/>

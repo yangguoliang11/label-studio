@@ -146,7 +146,7 @@ export const ExportPage = () => {
         const search = location.search;
         history.replace(`${path}${search !== '?' ? search : ''}`);
       }}
-      title="Export data"
+      title="导出数据"
       style={{width: 720}}
       closeOnClickOutside={false}
       allowClose={!downloading}
@@ -189,7 +189,7 @@ export const ExportPage = () => {
                   onClick={proceedExport}
                   waiting={downloading}
                 >
-                  Export
+                  导出
                 </Elem>
               </Space>
             </Elem>

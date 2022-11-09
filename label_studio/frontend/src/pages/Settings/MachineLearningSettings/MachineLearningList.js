@@ -89,7 +89,7 @@ const BackendCard = ({ backend, onStartTrain, onEdit, onDelete }) => {
       </DescriptionList>
 
       <Button disabled={backend.state !== "CO"} onClick={() => onStartTrain(backend)}>
-        Start Training
+        开始训练
       </Button>
     </Card>
   );

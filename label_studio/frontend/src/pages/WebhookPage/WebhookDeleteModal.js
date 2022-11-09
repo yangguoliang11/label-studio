@@ -41,7 +41,7 @@ export const WebhookDeleteModal = ({onDelete}) => {
               ctrl.hide();
             }
           }
-        >Delete</Button>
+        >删除</Button>
       </Space>;
     },
     style: { width: 512 },

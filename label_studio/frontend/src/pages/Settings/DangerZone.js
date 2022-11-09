@@ -50,28 +50,28 @@ export const DangerZone = () => {
   const buttons = useMemo(() => [{
     type: 'annotations',
     disabled: true, //&& !project.total_annotations_number,
-    label: `Delete ${project.total_annotations_number} Annotations`,
+    label: `删除 ${project.total_annotations_number} Annotations`,
   }, {
     type: 'tasks',
     disabled: true, //&& !project.task_number,
-    label: `Delete ${project.task_number} Tasks`,
+    label: `删除 ${project.task_number} Tasks`,
   }, {
     type: 'predictions',
     disabled: true, //&& !project.total_predictions_number,
-    label: `Delete ${project.total_predictions_number} Predictions`,
+    label: `删除 ${project.total__number} Predictions`,
   }, {
     type: 'tabs',
-    label: `Drop All Tabs`,
+    label: `删除所有选项卡`,
   }, {
     type: 'project',
-    label: 'Delete Project',
+    label: '删除 项目',
   }], [project]);
 
   return (
     <div style={{width: 480}}>
       <Label
-        text="Delete Annotations, Tasks, or Project"
-        description="Perform these actions at your own risk. Actions you take on this page can't be reverted. Make sure your data is backed up."
+        text="删除批注、任务或项目"
+        description="执行这些操作的风险由您自己承担。您在此页面上执行的操作无法恢复。确保您的数据已备份。"
         style={{display: 'block', width: 415}}
       />
 
@@ -96,5 +96,5 @@ export const DangerZone = () => {
   );
 };
 
-DangerZone.title = "Danger Zone";
+DangerZone.title = "危险区";
 DangerZone.path = "/danger-zone";

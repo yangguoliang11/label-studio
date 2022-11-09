@@ -98,4 +98,4 @@ Data labeling is one technique to reduce data drift by applying labels to data f
 There are several tools available today that enable annotators to label data efficiently. For example, [Label Studio](https://labelstud.io) is an open-source data labeling tool that provides a platform for labeling different data types, including images, text, audio as well as multi-domain data. It’s already used by leading technology companies including Facebook, NVIDIA, Intel, so check it out if you’re looking for a robust, open-source solution for reducing data drift.
 
 ![Label Studio](https://imgur.com/0ho5H76.png)
-*Screenshot of Label Studio for an Image Classification data labeling example.*
+*Screenshot of Label Studio for an 图像分类 data labeling example.*

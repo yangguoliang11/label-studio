@@ -34,7 +34,7 @@ export const MachineLearningSettings = () => {
     const action = backend ? "updateMLBackend" : "addMLBackend";
 
     const modalProps = {
-      title: `${backend ? 'Edit' : 'Add'} model`,
+      title: `${backend ? '编辑' : '添加'} 模型`,
       style: { width: 760 },
       closeOnClickOutside: false,
       body: (
@@ -52,12 +52,12 @@ export const MachineLearningSettings = () => {
           <Input type="hidden" name="project" value={project.id}/>
 
           <Form.Row columnCount={2}>
-            <Input name="title" label="Title" placeholder="ML Model"/>
+            <Input name="title" label="标题" placeholder="机器学习模型"/>
             <Input name="url" label="URL" required/>
           </Form.Row>
 
           <Form.Row columnCount={1}>
-            <TextArea name="description" label="Description" style={{ minHeight: 120 }}/>
+            <TextArea name="description" label="描述" style={{ minHeight: 120 }}/>
           </Form.Row>
 
           {isFF(FF_DEV_1682) && !!backend && (
@@ -85,14 +85,14 @@ export const MachineLearningSettings = () => {
             <div>
               <Toggle
                 name="is_interactive"
-                label="Use for interactive preannotations"
+                label="用于交互式预告"
               />
             </div>
           </Form.Row>
 
           <Form.Actions>
             <Button type="submit" look="primary" onClick={() => setMLError(null)}>
-              Validate and Save
+              验证并保存
             </Button>
           </Form.Actions>
 
@@ -126,15 +126,14 @@ export const MachineLearningSettings = () => {
   return (
     <>
       <Description style={{ marginTop: 0, maxWidth: 680 }}>
-        Add one or more machine learning models to predict labels for your data.
-        To import predictions without connecting a model,
+      添加一个或多个机器学习模型来预测数据的标注。要在不连接模型的情况下导入预测功能，请参阅文档。
         {" "}
         <a href="https://labelstud.io/guide/predictions.html" target="_blank">
           see the documentation
         </a>.
       </Description>
       <Button onClick={() => showMLFormModal()}>
-        Add Model
+      添加模型
       </Button>
 
       <Divider height={32}/>
@@ -146,18 +145,18 @@ export const MachineLearningSettings = () => {
         autosubmit
       >
         <Form.Row columnCount={1}>
-          <Label text="ML-Assisted Labeling" large/>
+          <Label text="机器辅助标注" large/>
 
           <div style={{ paddingLeft: 16 }}>
             <Toggle
-              label="Start model training after any annotations are submitted or updated"
+              label="提交或更新标注后开始模型培训"
               name="start_training_on_annotation_update"
             />
           </div>
 
           <div style={{ paddingLeft: 16 }}>
             <Toggle
-              label="Retrieve predictions when loading a task automatically"
+              label="加载任务时自动检索显示机器辅助标注"
               name="evaluate_predictions_automatically"
             />
           </div>
@@ -176,9 +175,9 @@ export const MachineLearningSettings = () => {
 
         <Form.Actions>
           <Form.Indicator>
-            <span case="success">Saved!</span>
+            <span case="success">已保存!</span>
           </Form.Indicator>
-          <Button type="submit" look="primary" style={{ width: 120 }}>Save</Button>
+          <Button type="submit" look="primary" style={{ width: 120 }}>保存</Button>
         </Form.Actions>
       </Form>
 
@@ -191,5 +190,5 @@ export const MachineLearningSettings = () => {
   );
 };
 
-MachineLearningSettings.title = "Machine Learning";
+MachineLearningSettings.title = "机器学习";
 MachineLearningSettings.path = "/ml";

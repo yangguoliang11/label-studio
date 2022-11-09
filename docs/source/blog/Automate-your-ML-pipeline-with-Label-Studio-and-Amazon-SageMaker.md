@@ -466,14 +466,14 @@ Connect the S3 bucket and prefixes to Label Studio to ease the automation of you
 
 1. In the Label Studio UI, click **Settings** to open the project settings.
 2. Click **Cloud Storage**.
-3. Click **Add Source Storage**.
+3. Click **添加源存储**.
 4. Specify a title for the storage. For example, **Source bird images**.
 5. Specify a bucket name of **showcase-bucket** and a bucket prefix of **bird-images**. 
 6. Specify a file filter regex of `.*jpg` so that Label Studio retrieves only images with that file extension from the S3 bucket prefix. 
 7. Specify a region name of `us-east-2`, unless you're using a different region to follow along with this blog post.
-8. Specify the Access Key ID, Secret Access Key, and Session Token for a user with access to S3 buckets. You can use the credentials of the user account that you used to create the S3 bucket.
-9. Select the option to **Treat every bucket object as a source file**. 
-10. Click **Add Storage**.
+8. Specify the 访问密钥ID, 秘密访问密钥, and 会话令牌 for a user with access to S3 buckets. You can use the credentials of the user account that you used to create the S3 bucket.
+9. Select the option to **将每个bucket对象视为源文件**. 
+10. Click **添加存储**.
 11. Click **Sync Storage** to sync the images.
 
 <br/><img src="/images/webhook-blog/data-manager.png" alt="Screenshot of the Label Studio UI showing bird images and annotation progress on the data manager." class="gif-border" width="800px" height="577px" />
@@ -483,8 +483,8 @@ As the images sync to Label Studio using pre-signed URLs, set up the target stor
 2. Specify a title for the storage. For example, **Annotated birds**.
 3. Specify a bucket name of **showcase-bucket** and a bucket prefix of **annotations**. 
 4. Specify a region name of `us-east-2`, unless you're using a different region to follow along with this blog post.
-8. Specify the Access Key ID, Secret Access Key, and Session Token for a user with access to S3 buckets. You can use the credentials of the user account that you used to create the S3 bucket.
-6. Click **Add Storage**.
+8. Specify the 访问密钥ID, 秘密访问密钥, and 会话令牌 for a user with access to S3 buckets. You can use the credentials of the user account that you used to create the S3 bucket.
+6. Click **添加存储**.
 
 ### Set up the webhook URL and events
 

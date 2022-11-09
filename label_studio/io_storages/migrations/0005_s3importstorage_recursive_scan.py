@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='s3importstorage',
             name='recursive_scan',
-            field=models.BooleanField(default=False, help_text='Perform recursive scan over the bucket content', verbose_name='recursive scan'),
+            field=models.BooleanField(default=False, help_text='对存储桶内容执行递归扫描', verbose_name='recursive scan'),
         ),
     ]

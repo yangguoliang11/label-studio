@@ -9,7 +9,7 @@ export const ModelVersionSelector = ({
   name = "model_version",
   valueName = "model_version",
   apiName = "modelVersions",
-  placeholder = "No model version selected",
+  placeholder = "未选择模型版本",
   object,
   ...props
 }) => {

@@ -1,5 +1,5 @@
 ---
-title: Object Detection with Bounding Boxes
+title: 矩形框进行目标检测
 type: templates
 category: Computer Vision
 cat: computer-vision

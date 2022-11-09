@@ -106,7 +106,7 @@ class ImportStorage(Storage):
                 raise ValueError(
                     f'Error loading JSON from file "{key}".\nIf you\'re trying to import non-JSON data '
                     f'(images, audio, text, etc.), edit storage settings and enable '
-                    f'"Treat every bucket object as a source file"'
+                    f'"将每个bucket对象视为源文件"'
                 )
 
             # predictions

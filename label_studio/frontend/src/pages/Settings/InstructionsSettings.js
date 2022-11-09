@@ -21,12 +21,12 @@ export const InstructionsSettings = () => {
     <div style={{width: 480}}>
       <Form ref={formRef} action="updateProject" formData={{...project}} params={{pk: project.id}} onSubmit={updateProject}>
         <Form.Row columnCount={1}>
-          <Label text="Labeling Instructions" large/>
+          <Label text="标注说明" large/>
           <div style={{paddingLeft: 16}}>
-            <Toggle label="Show before labeling" name="show_instruction"/>
+            <Toggle label="在标注前显示" name="show_instruction"/>
           </div>
           <div style={{color: "rgba(0,0,0,0.4)", paddingLeft: 16}}>
-            Write instructions to help users complete labeling tasks.
+            编写说明以帮助用户完成标记任务。
           </div>
         </Form.Row>
 
@@ -36,14 +36,14 @@ export const InstructionsSettings = () => {
 
         <Form.Actions>
           <Form.Indicator>
-            <span case="success">Saved!</span>
+            <span case="success">已保存!</span>
           </Form.Indicator>
-          <Button type="submit" look="primary" style={{width: 120}}>Save</Button>
+          <Button type="submit" look="primary" style={{width: 120}}>保存</Button>
         </Form.Actions>
       </Form>
     </div>
   );
 };
 
-InstructionsSettings.title = "Instructions";
+InstructionsSettings.title = "说明书";
 InstructionsSettings.path = "/instruction";

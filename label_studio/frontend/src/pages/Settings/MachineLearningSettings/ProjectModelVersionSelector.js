@@ -8,7 +8,7 @@ export const ProjectModelVersionSelector = ({
   name = "model_version",
   valueName = "model_version",
   apiName = "projectModelVersions",
-  placeholder = "No model version selected",
+  placeholder = "未选择模型版本",
   ...props
 }) => {
   const api = useAPI();
@@ -44,7 +44,7 @@ export const ProjectModelVersionSelector = ({
     if (modelVersions) {
       setVersions(Object.entries(modelVersions).reduce((v, [key, value]) => [...v, {
         value: key,
-        label: `${key} (${value} predictions)`,
+        label: `${key} (${value} 个预测)`,
       }], []));
     }
 
@@ -56,10 +56,10 @@ export const ProjectModelVersionSelector = ({
   return (
     <Form.Row columnCount={1}>
       <Label
-        text="Model Version"
+        text="模型版本"
         description={(
           <>
-            Model version allows you to specify which prediction will be shown to the annotators.
+            模型版本允许您指定在标注框内显示机器辅助标注功能。
             {version && (
               <>
                 <br />

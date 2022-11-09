@@ -134,5 +134,5 @@ Don't forget to close the original [View](/tags/view.html) tag:
 
 ## Related templates
 - [命名实体识别](named_entity.html)
-- [Image Classification](image_classification.html)
+- [图像分类](image_classification.html)
 - [Slot Filling and 意图分类](slot_filling.html)

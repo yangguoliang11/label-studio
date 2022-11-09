@@ -1,5 +1,5 @@
 ---
-title: Keypoint Labeling
+title: 关键点标记
 type: templates
 category: Computer Vision
 cat: computer-vision

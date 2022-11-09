@@ -24,8 +24,8 @@ export const GeneralSettings = () => {
   ];
 
   const samplings = [
-    {value: "Sequential", label: "Sequential", description: "Tasks are ordered by Data manager ordering"},
-    {value: "Uniform", label: "Random", description: "Tasks are chosen with uniform random"},
+    {value: "Sequential", label: "顺序", description: "任务按数据管理器排序"},
+    {value: "Uniform", label: "随机", description: "任务以均匀随机方式选择"},
   ];
 
   return (
@@ -50,7 +50,7 @@ export const GeneralSettings = () => {
             style={{minHeight: 128}}
           />
 
-          <RadioGroup name="color" label="Color" size="large" labelProps={{size: "large"}}>
+          <RadioGroup name="color" label="颜色" size="large" labelProps={{size: "large"}}>
             {colors.map(color => (
               <RadioGroup.Button key={color} value={color}>
                 <Block name="color" style={{'--background': color}}/>
@@ -58,12 +58,12 @@ export const GeneralSettings = () => {
             ))}
           </RadioGroup>
 
-          <RadioGroup label="Task Sampling" labelProps={{size: "large"}} name="sampling" simple>
+          <RadioGroup label="任务采样" labelProps={{size: "large"}} name="sampling" simple>
             {samplings.map(({value, label, description}) => (
               <RadioGroup.Button
                 key={value}
                 value={`${value} sampling`}
-                label={`${label} sampling`}
+                label={`${label} 采样`}
                 description={description}
               />
             ))}
@@ -81,6 +81,6 @@ export const GeneralSettings = () => {
   );
 };
 
-GeneralSettings.menuItem = "General";
+GeneralSettings.menuItem = "通用";
 GeneralSettings.path = "/";
 GeneralSettings.exact = true;

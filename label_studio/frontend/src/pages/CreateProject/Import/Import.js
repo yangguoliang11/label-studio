@@ -280,7 +280,7 @@ export const ImportPage = ({
 
       <header>
         <form className={importClass.elem("url-form") + " inline"} method="POST" onSubmit={onLoadURL}>
-          <input placeholder="Dataset URL" name="url" ref={urlRef} />
+          <input placeholder="数据集URL" name="url" ref={urlRef} />
           <button type="submit">添加URL</button>
         </form>
         <span>or</span>
@@ -319,9 +319,9 @@ export const ImportPage = ({
                   <dt>Common Formats</dt><dd>csv, tsv, txt, json</dd>
                 </dl>
                 <b>
-                   * – Support depends on the browser<br/>
-                   * – Use <a href="https://labelstud.io/guide/storage.html" target="_blank">
-                  Cloud Storages</a> if you want to import a large number of files
+                   * –支持取决于浏览器<br/>
+                   * –如果要导入大量文件，请使用<a href="https://labelstud.io/guide/storage.html" target="_blank">
+                云存储</a>
                 </b>
               </div>
             </label>

@@ -70,7 +70,7 @@ def get_all_columns(project, *_):
     # --- Data root ---
     data_root = {
         'id': 'data',
-        'title': "data",
+        'title': "数据库",
         'type': "List",
         'target': 'tasks',
         'children': task_data_children
@@ -80,7 +80,7 @@ def get_all_columns(project, *_):
         # --- Tasks ---
         {
             'id': 'id',
-            'title': "ID",
+            'title': "账号名称",
             'type': 'Number',
             'help': 'Task ID',
             'target': 'tasks',
@@ -94,7 +94,7 @@ def get_all_columns(project, *_):
     if flag_set('ff_back_2070_inner_id_12052022_short', user=project.organization.created_by):
         result['columns'] += [{
             'id': 'inner_id',
-            'title': "Inner ID",
+            'title': "内部账号名称",
             'type': 'Number',
             'help': 'Internal task ID starting from 1 for the current project',
             'target': 'tasks',
@@ -107,7 +107,7 @@ def get_all_columns(project, *_):
     result['columns'] += [
         {
             'id': 'completed_at',
-            'title': 'Completed',
+            'title': '完成标注',
             'type': 'Datetime',
             'target': 'tasks',
             'help': 'Last annotation date',
@@ -118,7 +118,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'total_annotations',
-            'title': 'Annotations',
+            'title': '正在标注',
             'type': "Number",
             'target': 'tasks',
             'help': 'Total annotations per task',
@@ -129,7 +129,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'cancelled_annotations',
-            'title': "Cancelled",
+            'title': "取消",
             'type': "Number",
             'target': 'tasks',
             'help': 'Total cancelled (skipped) annotations',
@@ -140,7 +140,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'total_predictions',
-            'title': "Predictions",
+            'title': "审核",
             'type': "Number",
             'target': 'tasks',
             'help': 'Total predictions per task',
@@ -151,7 +151,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'annotators',
-            'title': 'Annotated by',
+            'title': '标注人',
             'type': 'List',
             'target': 'tasks',
             'help': 'All users who completed the task',
@@ -163,7 +163,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'annotations_results',
-            'title': "Annotation results",
+            'title': "标注结果",
             'type': "String",
             'target': 'tasks',
             'help': 'Annotation results stacked over all annotations',
@@ -174,7 +174,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'annotations_ids',
-            'title': "Annotation IDs",
+            'title': "标注账号",
             'type': "String",
             'target': 'tasks',
             'help': 'Annotation IDs stacked over all annotations',
@@ -185,7 +185,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'predictions_score',
-            'title': "Prediction score",
+            'title': "审核得分",
             'type': "Number",
             'target': 'tasks',
             'help': 'Average prediction score over all task predictions',
@@ -196,7 +196,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'predictions_model_versions',
-            'title': "Prediction model versions",
+            'title': "审核模型版本",
             'type': 'List',
             'target': 'tasks',
             'help': 'Model versions aggregated over all predictions',
@@ -208,7 +208,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'predictions_results',
-            'title': "Prediction results",
+            'title': "审核结果",
             'type': "String",
             'target': 'tasks',
             'help': 'Prediction results stacked over all predictions',
@@ -219,7 +219,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'file_upload',
-            'title': "Upload filename",
+            'title': "上载文件名",
             'type': "String",
             'target': 'tasks',
             'help': 'Filename of uploaded file',
@@ -230,7 +230,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'storage_filename',
-            'title': "Storage filename",
+            'title': "存储文件名",
             'type': "String",
             'target': 'tasks',
             'help': 'Filename from import storage',
@@ -241,7 +241,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'created_at',
-            'title': 'Created at',
+            'title': '创建于',
             'type': 'Datetime',
             'target': 'tasks',
             'help': 'Task creation time',
@@ -252,7 +252,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'updated_at',
-            'title': 'Updated at',
+            'title': '更新时间',
             'type': 'Datetime',
             'target': 'tasks',
             'help': 'Task update time',
@@ -263,7 +263,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'updated_by',
-            'title': 'Updated by',
+            'title': '更新者',
             'type': 'List',
             'target': 'tasks',
             'help': 'User who did the last task update',
@@ -275,7 +275,7 @@ def get_all_columns(project, *_):
         },
         {
             'id': 'avg_lead_time',
-            'title': "Lead Time",
+            'title': "订货交付时间",
             'type': 'Number',
             'help': 'Average lead time over all annotations (seconds)',
             'target': 'tasks',

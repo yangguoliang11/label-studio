@@ -65,7 +65,7 @@ Import your data and set up the labeling interface to start labeling the trainin
 
 1. Create a project called "Home Object Detection".
 2. Add the dataset of homes. 
-3. Select the **Object Detection with Bounding Boxes** labeling template.
+3. Select the **矩形框进行目标检测** labeling template.
 4. Change the default label names to be a list of: Home, Pool, Fence, Driveway, and Other. 	
 5. Save the project. 
 
