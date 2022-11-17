@@ -67,7 +67,7 @@
             删除
           </button>
 
-          <input class="file-input" type="file" name="avatar" value="Choose"
+          <input class="file-input" type="file" name="avatar" value="选择"
                 accept="image/png, image/jpeg, image/jpg"/>
         </div>
 
@@ -77,7 +77,7 @@
         </div> -->
       </div>
       <footer>
-        <p class="secondary">Registered {{ user.date_joined|date:"M j, Y" }}, user ID {{ user.id }}</p>
+        <p class="secondary">已经注册 {{ user.date_joined|date:"M j, Y" }}, 用户ID {{ user.id }}</p>
         <button class="ls-button ls-button_look_primary" onclick="smart_submit()">保存</button>
       </footer>
     </form>
@@ -117,17 +117,17 @@
       <header>
         {{ user.active_organization.title }}
         <br>
-        <sub style="font-size: 16px; margin-top: 0; color: rgba(0,0,0,0.2); ">Your active organization</sub>
+        <sub style="font-size: 16px; margin-top: 0; color: rgba(0,0,0,0.2); ">你当前组织</sub>
       </header>
 
       <table>
         {% with user.get_pretty_role as role %}
           {% if role %}
-            <tr><td>Your role</td><td>{{ user.get_pretty_role }}</td></tr>
+            <tr><td>你的角色</td><td>{{ user.get_pretty_role }}</td></tr>
           {% endif %}
         {% endwith %}
-        <tr><td>Annotations completed by you</td><td>{{ user.active_organization_annotations.count }}</td></tr>
-        <tr><td>Projects contributed by you</td><td>{{ user.active_organization_contributed_project_number }}</td></tr>
+        <tr><td>你完成的标注</td><td>{{ user.active_organization_annotations.count }}</td></tr>
+        <tr><td>你贡献过的项目</td><td>{{ user.active_organization_contributed_project_number }}</td></tr>
         <tr><td></td><td></td></tr>
         <tr><td style="min-width: 75px">组织 ID</td><td>{{ user.active_organization.id }}</td></tr>
         <tr><td>组织所有者</td><td>{{ user.active_organization.created_by }}</td></tr>
@@ -141,7 +141,7 @@
       <header>
         注意
         <br>
-        <sub style="font-size: 16px; margin-top: 0; color: rgba(0,0,0,0.2);">Email and other notifications</sub>
+        <sub style="font-size: 16px; margin-top: 0; color: rgba(0,0,0,0.2);">邮件和其他通知</sub>
       </header>
 
       <table>
