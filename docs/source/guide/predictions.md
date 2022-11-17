@@ -820,7 +820,7 @@ If annotators can't see predictions or if you encounter unexpected behavior afte
 
 ### Make sure the predictions are visible to annotators
 In the **Settings > Machine Learning** section for your project, make sure that the following settings are configured:
-- Enable **Show predictions to annotators in the Label Stream and Quick View**
+- Enable **在标签流和快速视图中向注释器显示预测**
 - Select the relevant **Model Version** in the drop-down. If there is no drop-down menu visible, there might not be a model version listed for the pre-annotations, or there might be another issue happening. 
 - <i class='ent'></i> Disable the option to **Reveal pre-annotations interactively**, which requires manual action from annotators to display pre-annotated regions. (Label Studio Enterprise only)  
 

@@ -41,7 +41,7 @@ As you label tasks, Label Studio sends webhook events to your machine learning b
 ## Connect the ML backend to Label Studio for active learning
 
 1. Follow the steps to [Add an ML backend to Label Studio](ml.html#Add-an-ML-backend-to-Label-Studio).
-2. Under **ML-Assisted Labeling**, enable the setting to **Show predictions to annotators in the Label Stream and Quick View**. 
+2. Under **ML-Assisted Labeling**, enable the setting to **在标签流和快速视图中向注释器显示预测**. 
 
 ## Configure webhooks to send a training event to the ML backend (optional)
 

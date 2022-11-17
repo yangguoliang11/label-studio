@@ -283,15 +283,15 @@ export const ImportPage = ({
           <input placeholder="数据集URL" name="url" ref={urlRef} />
           <button type="submit">添加URL</button>
         </form>
-        <span>or</span>
+        <span>或</span>
         <button onClick={() => document.getElementById('file-input').click()} className={importClass.elem("upload-button")}>
           <IconUpload width="16" height="16" className={importClass.elem("upload-icon")} />
           上传 {files.uploaded.length ? "More " : ""}文件
         </button>
         <div className={importClass.elem("csv-handling").mod({ highlighted: highlightCsvHandling, hidden: !csvHandling })}>
-          <span>Treat CSV/TSV as</span>
-          <label><input {...csvProps} value="tasks" checked={csvHandling === "tasks"}/> List of tasks</label>
-          <label><input {...csvProps} value="ts" checked={csvHandling === "ts"}/> Time Series or Whole Text File</label>
+          <span>将CSV/TSV视为</span>
+          <label><input {...csvProps} value="tasks" checked={csvHandling === "tasks"}/> 任务列表</label>
+          <label><input {...csvProps} value="ts" checked={csvHandling === "ts"}/> 时间序列或全文文件</label>
         </div>
         <div className={importClass.elem("status")}>
           {files.uploaded.length
@@ -310,13 +310,13 @@ export const ImportPage = ({
                 <header>将文件拖放到这里<br/>或点击浏览</header>
                 <IconUpload height="64" className={dropzoneClass.elem("icon")} />
                 <dl>
-                  <dt>Text</dt><dd>txt</dd>
-                  <dt>Audio</dt><dd>wav, aiff, mp3, au, flac, m4a, ogg</dd>
-                  <dt>Video</dt><dd>mpeg4/H.264 webp, webm*</dd>
-                  <dt>Images</dt><dd>jpg, png, gif, bmp, svg, webp</dd>
-                  <dt>HTML</dt><dd>html, htm, xml</dd>
-                  <dt>Time Series</dt><dd>csv, tsv</dd>
-                  <dt>Common Formats</dt><dd>csv, tsv, txt, json</dd>
+                  <dt>文本</dt><dd>txt</dd>
+                  <dt>音频</dt><dd>wav, aiff, mp3, au, flac, m4a, ogg</dd>
+                  <dt>视频</dt><dd>mpeg4/H.264 webp, webm*</dd>
+                  <dt>图片</dt><dd>jpg, png, gif, bmp, svg, webp</dd>
+                  <dt>网页</dt><dd>html, htm, xml</dd>
+                  <dt>时间序列</dt><dd>csv, tsv</dd>
+                  <dt>一般格式</dt><dd>csv, tsv, txt, json</dd>
                 </dl>
                 <b>
                    * –支持取决于浏览器<br/>

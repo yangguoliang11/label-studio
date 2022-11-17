@@ -143,7 +143,7 @@ const WebhookDetail = ({ webhook, webhooksInfo, fetchWebhooks, onBack, onSelectA
             <div className={rootClass.elem('headers')}>
               <div className={rootClass.elem('headers-content')}>
                 <Space spread className={rootClass.elem('headers-control')}>
-                  <Label text="Headers" large />
+                  <Label text="头信息" large />
                   <Button 
                     type='button' 
                     onClick={onAddHeaderClick} 
@@ -156,12 +156,12 @@ const WebhookDetail = ({ webhook, webhooksInfo, fetchWebhooks, onBack, onSelectA
                     return <Space key={index} className={rootClass.elem('headers-row')} columnCount={3} >
                       <Input className={rootClass.elem('headers-input')} 
                         skip 
-                        placeholder="header" 
+                        placeholder="头" 
                         value={headKey} 
                         onChange={(e) => onHeaderChange('key', e, index)} />
                       <Input className={rootClass.elem('headers-input')} 
                         skip 
-                        placeholder="value"
+                        placeholder="值"
                         value={headValue} 
                         onChange={(e) => onHeaderChange('value', e, index)} />
                       <div>
