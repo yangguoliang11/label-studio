@@ -97,7 +97,7 @@ export const ProjectModelVersionSelector = ({
         </div>
 
         <Button onClick={resetMLVersion}>
-          Reset
+          重置
         </Button>
       </div>
     </Form.Row>

@@ -1,5 +1,5 @@
 ---
-title: Taxonomy
+title: 分类学
 type: templates
 category: Natural Language Processing
 cat: natural-language-processing
@@ -41,7 +41,7 @@ Use the [Text](/tags/text.html) object tag to display text to classify:
 ```xml
 <Text name="text" value="$text"/>
 ```
-Use the [Taxonomy](/tags/taxonomy.html) control tag to create a taxonomy of choices for annotators to select from:
+Use the [分类学](/tags/taxonomy.html) control tag to create a taxonomy of choices for annotators to select from:
 ```xml
 <Taxonomy name="taxonomy" toName="text">
 ```
@@ -61,5 +61,5 @@ Nest choices under a specific [Choice](/tags/choice.html) tag to create layers i
 ## Related tags
 
 - [Text](/tags/text.html)
-- [Taxonomy](/tags/taxonomy.html)
+- [分类学](/tags/taxonomy.html)
 - [Choice](/tags/choice.html)

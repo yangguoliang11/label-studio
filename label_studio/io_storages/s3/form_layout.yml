@@ -96,5 +96,5 @@ ExportStorage:
         fields:
           - type: toggle
             name: can_delete_objects
-            label: Can delete objects from storage
-            description: If unchecked, annotations will not be deleted from storage
+            label: 可以从存储中删除对象
+            description: 如果未选中，则不会从存储中删除注释

@@ -129,7 +129,7 @@ export const MachineLearningSettings = () => {
       添加一个或多个机器学习模型来预测数据的标注。要在不连接模型的情况下导入预测功能，请参阅文档。
         {" "}
         <a href="https://labelstud.io/guide/predictions.html" target="_blank">
-          see the documentation
+          查看文档
         </a>.
       </Description>
       <Button onClick={() => showMLFormModal()}>
@@ -163,7 +163,7 @@ export const MachineLearningSettings = () => {
 
           <div style={{ paddingLeft: 16 }}>
             <Toggle
-              label="Show predictions to annotators in the Label Stream and Quick View"
+              label="在标注和快速视图中显示机器辅助标注结果"
               name="show_collab_predictions"
             />
           </div>

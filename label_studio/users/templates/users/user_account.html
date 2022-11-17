@@ -27,22 +27,22 @@
     <form action="{% url 'user-detail' pk=user.pk %}" method="patch" class="user__info">
       <input type="hidden" name="_method" value="patch"/>
 
-      <header>Account info</header>
+      <header>账户信息</header>
       <ul>
         <li class="field">
-          <label for="">E-mail</label>
+          <label for="">邮箱</label>
           <input type="text" class="ls-input" value="{{user.email}}" disabled />
         </li>
         <li class="field">
-          <label for="">First Name</label>
+          <label for="">名字</label>
           <input type="text" class="ls-input" name="first_name" value="{{user.first_name}}" />
         </li>
         <li class="field">
-          <label for="">Last Name</label>
+          <label for="">姓氏</label>
           <input type="text" class="ls-input" name="last_name" value="{{user.last_name}}" />
         </li>
         <li class="field">
-          <label for="">Phone</label>
+          <label for="">电话</label>
           <input type="text" class="ls-input" name="phone" value="{{user.phone}}" />
           <!-- <span>We'll send you sms with code if you change your number</span>
           <span class="error">Incorrect phone number!</span> -->
@@ -64,7 +64,7 @@
           </div>
 
           <button class="ls-button ls-button_look_danger" name="delete-avatar" type="button">
-            Delete
+            删除
           </button>
 
           <input class="file-input" type="file" name="avatar" value="Choose"
@@ -78,24 +78,24 @@
       </div>
       <footer>
         <p class="secondary">Registered {{ user.date_joined|date:"M j, Y" }}, user ID {{ user.id }}</p>
-        <button class="ls-button ls-button_look_primary" onclick="smart_submit()">Save</button>
+        <button class="ls-button ls-button_look_primary" onclick="smart_submit()">保存</button>
       </footer>
     </form>
 
     <!-- Token -->
     <form action="" class="access_token__info">
-      <header>Access Token</header>
+      <header>通行令牌</header>
       <div class="field field--wide">
-        <label for="access_token">Use this token to authenticate with our API:</label>
+        <label for="access_token">用这个令牌访问我们的API接口:</label>
         <input id="access_token" class="ls-input" name="access_token" type="text" value="{{token}}" readonly />
         <p class="actions">
-          <button type="button" class="blinking-status ls-button" data-copy="access_token">Copy</button>
-          <button type="button" class="blinking-status ls-button" name="renew">Renew</button>
+          <button type="button" class="blinking-status ls-button" data-copy="access_token">复制</button>
+          <button type="button" class="blinking-status ls-button" name="renew">更新</button>
         </p>
       </div>
       <!-- Example -->
       <div class="field field--wide">
-        <label for="example_fetch">Example fetch projects data:</label>
+        <label for="example_fetch">项目数据例子:</label>
         <textarea id="example_fetch" class="example_code ls-textarea" type="text" readonly
                   style="height: 92px; font-size: 14px">
           {% if settings.HOSTNAME %}
@@ -130,8 +130,8 @@
         <tr><td>Projects contributed by you</td><td>{{ user.active_organization_contributed_project_number }}</td></tr>
         <tr><td></td><td></td></tr>
         <tr><td style="min-width: 75px">组织 ID</td><td>{{ user.active_organization.id }}</td></tr>
-        <tr><td>组织 owner</td><td>{{ user.active_organization.created_by }}</td></tr>
-        <tr><td>组织 created at</td><td>{{ user.active_organization.created_at }}</td></tr>
+        <tr><td>组织所有者</td><td>{{ user.active_organization.created_by }}</td></tr>
+        <tr><td>组织创建于</td><td>{{ user.active_organization.created_at }}</td></tr>
       </table>
 
     </form>
@@ -139,7 +139,7 @@
     <!-- Notifications -->
     <form action="{% url 'user-detail' pk=user.pk %}?update-notifications=1" method="patch" class="notifications block-info" id="notifications">
       <header>
-        Notifications
+        注意
         <br>
         <sub style="font-size: 16px; margin-top: 0; color: rgba(0,0,0,0.2);">Email and other notifications</sub>
       </header>

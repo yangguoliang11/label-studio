@@ -128,7 +128,7 @@ const WebhookDetail = ({ webhook, webhooksInfo, fetchWebhooks, onBack, onSelectA
               <Input 
                 name="url" 
                 className={rootClass.elem('url-input')} 
-                placeholder="URL" />
+                placeholder="链接地址" />
               <Space align='end' className={rootClass.elem('activator')}>
                 <span className={rootClass.elem('black-text')}>处于活动状态</span>
                 <Toggle 
@@ -178,7 +178,7 @@ const WebhookDetail = ({ webhook, webhooksInfo, fetchWebhooks, onBack, onSelectA
           </Form.Row>
           <Block name='webhook-payload' style={{marginBottom: '40px'}}>
             <Elem name='title'>
-              <Label text="Payload" large />
+              <Label text="有效载荷" large />
             </Elem>
             <Elem name='content'>
               <Elem name='content-row'>
@@ -201,7 +201,7 @@ const WebhookDetail = ({ webhook, webhooksInfo, fetchWebhooks, onBack, onSelectA
                   !sendForAllActions ?
                     <Elem name='content-row-actions'>
                       <Elem tag='h4' name='title' mod={{black:true}}>
-                        Send Payload for
+                      发送有效载荷为了
                       </Elem>
                       <Elem name='actions'>
                         {Object.entries(webhooksInfo).map(([key, value]) => {
@@ -241,7 +241,7 @@ const WebhookDetail = ({ webhook, webhooksInfo, fetchWebhooks, onBack, onSelectA
                       await fetchWebhooks();
                     },
                   })}>
-                Delete Webhook...
+                删除Webhook...
                 </Button>
             }
             <div className={rootClass.elem('status')}>
@@ -251,13 +251,13 @@ const WebhookDetail = ({ webhook, webhooksInfo, fetchWebhooks, onBack, onSelectA
               type='button'
               className={rootClass.elem('cancel-button')}
               onClick={onBack}
-            >Cancel
+            >取消
             </Button>
             <Button 
               primary
               className={rootClass.elem('save-button')}
             >
-              { webhook===null ? '添加webhook': 'Save' }
+              { webhook===null ? '添加webhook': '保存' }
             </Button>
           </Elem>
         </Form>

@@ -203,7 +203,7 @@ export const ExportPage = () => {
 const FormatInfo = ({availableFormats, selected, onClick}) => {
   return (
     <Block name="formats">
-      <Elem name="info">You can export dataset in one of the following formats:</Elem>
+      <Elem name="info">你可以用下面格式导出数据:</Elem>
       <Elem name="list">
         {availableFormats.map(format => (
           <Elem
@@ -229,11 +229,7 @@ const FormatInfo = ({availableFormats, selected, onClick}) => {
           </Elem>
         ))}
       </Elem>
-      <Elem name="feedback">
-        Can't find an export format?
-        <br/>
-        Please let us know in <a className="no-go" href="https://slack.labelstudio.heartex.com/?source=product-export">Slack</a> or submit an issue to the <a className="no-go" href="https://github.com/heartexlabs/label-studio-converter/issues">Repository</a>
-      </Elem>
+    
     </Block>
   );
 };

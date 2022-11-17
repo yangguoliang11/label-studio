@@ -20,7 +20,7 @@ Use with the following data types: video
 
 ### Example
 
-Video Object Tracking
+视频目标跟踪
 
 ```html
 <View>

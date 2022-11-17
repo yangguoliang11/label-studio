@@ -96,12 +96,12 @@ const ConfigureControl = ({ control, template }) => {
   return (
     <div className={configClass.elem("labels")}>
       <form className={configClass.elem("add-labels")} action="">
-        <h4>{tagname === "Choices" ? "Add choices" : "Add label names"}</h4>
+        <h4>{tagname === "Choices" ? "添加选项" : "添加标签名称"}</h4>
         <textarea name="labels" id="" cols="30" rows="5" ref={refLabels} onKeyPress={onKeyPress}></textarea>
-        <input type="button" value="Add" onClick={onAddLabels} />
+        <input type="button" value="添加" onClick={onAddLabels} />
       </form>
       <div className={configClass.elem("current-labels")}>
-        <h3>{tagname === "Choices" ? "Choices" : "Labels"} ({control.children.length})</h3>
+        <h3>{tagname === "Choices" ? "选项" : "标签"} ({control.children.length})</h3>
         <ul>
           {Array.from(control.children).map(label => (
             <Label
@@ -278,9 +278,9 @@ const ConfigureColumns = ({ columns, template }) => {
 
   return (
     <div className={configClass.elem("object")}>
-      <h4>Configure data</h4>
+      <h4>配置数据</h4>
       {template.objects.length > 1 && columns?.length > 0 && columns.length < template.objects.length && (
-        <p className={configClass.elem("object-error")}>This template requires more data then you have for now</p>
+        <p className={configClass.elem("object-error")}>这个模板需要更多数据</p>
       )}
       {columns?.length === 0 && (
         <p className={configClass.elem("object-error")}>

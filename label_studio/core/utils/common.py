@@ -96,7 +96,7 @@ def custom_exception_handler(exc, context):
             response.data = response_data
         # move validation errors to separate namespace
         else:
-            response_data['detail'] = 'Validation error'
+            response_data['detail'] = '验证错误'
             response_data['validation_errors'] = response.data if isinstance(response.data, dict) else {'non_field_errors': response.data}
             response.data = response_data
 

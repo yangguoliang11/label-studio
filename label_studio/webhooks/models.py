@@ -117,7 +117,7 @@ class WebhookAction(models.Model):
 
     ACTIONS = {
         PROJECT_CREATED: {
-            'name': _('Project created'),
+            'name': _('项目创建'),
             'description': _(''),
             'key': 'project',
             'many': False,
@@ -126,7 +126,7 @@ class WebhookAction(models.Model):
             'organization-only': True,
         },
         PROJECT_UPDATED: {
-            'name': _('Project updated'),
+            'name': _('项目更新'),
             'description': _(''),
             'key': 'project',
             'many': False,
@@ -144,7 +144,7 @@ class WebhookAction(models.Model):
             'organization-only': True,
         },
         TASKS_CREATED: {
-            'name': _('Task created'),
+            'name': _('任务创建'),
             'description': _(''),
             'key': 'tasks',
             'many': True,
@@ -153,7 +153,7 @@ class WebhookAction(models.Model):
             'project-field': 'project',
         },
         TASKS_DELETED: {
-            'name': _('Task deleted'),
+            'name': _('任务删除'),
             'description': _(''),
             'key': 'tasks',
             'many': True,
@@ -162,7 +162,7 @@ class WebhookAction(models.Model):
             'project-field': 'project',
         },
         ANNOTATION_CREATED: {
-            'name': _('Annotation created'),
+            'name': _('注释创建'),
             'description': _(''),
             'key': 'annotation',
             'many': False,
@@ -178,7 +178,7 @@ class WebhookAction(models.Model):
             },
         },
         ANNOTATIONS_CREATED: {
-            'name': _('Annotations created'),
+            'name': _('注释创建'),
             'description': _(''),
             'key': 'annotation',
             'many': True,
@@ -194,7 +194,7 @@ class WebhookAction(models.Model):
             },
         },
         ANNOTATION_UPDATED: {
-            'name': _('Annotation updated'),
+            'name': _('注释更新'),
             'description': _(''),
             'key': 'annotation',
             'many': False,
@@ -210,7 +210,7 @@ class WebhookAction(models.Model):
             },
         },
         ANNOTATIONS_DELETED: {
-            'name': _('Annotation deleted'),
+            'name': _('注释删除'),
             'description': _(''),
             'key': 'annotations',
             'many': True,
@@ -219,7 +219,7 @@ class WebhookAction(models.Model):
             'project-field': 'task__project',
         },
         LABEL_LINK_CREATED: {
-            'name': _('Label link created'),
+            'name': _('标签链接创建'),
             'description': _(''),
             'key': 'label_link',
             'many': True,
@@ -228,7 +228,7 @@ class WebhookAction(models.Model):
             'project-field': 'project',
         },
         LABEL_LINK_UPDATED: {
-            'name': _('Label link updated'),
+            'name': _('标签链接更新'),
             'description': _(''),
             'key': 'label_link',
             'many': False,
@@ -244,7 +244,7 @@ class WebhookAction(models.Model):
             }
         },
         LABEL_LINK_DELETED: {
-            'name': _('Label link deleted'),
+            'name': _('标签链接删除'),
             'description': _(''),
             'key': 'label_link',
             'many': False,

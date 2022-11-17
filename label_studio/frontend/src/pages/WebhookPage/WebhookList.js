@@ -61,7 +61,7 @@ const WebhookList = ({ onSelectActive, onAddWebhook, webhooks, fetchWebhooks }) 
                   <Button
                     onClick={() => onSelectActive(obj.id)}
                     icon={<LsPencil />}
-                  >Edit</Button>
+                  >编辑</Button>
                   <Button
                     onClick={()=> WebhookDeleteModal({ 
                       onDelete: async ()=>{
@@ -71,7 +71,7 @@ const WebhookList = ({ onSelectActive, onAddWebhook, webhooks, fetchWebhooks }) 
                     })}
                     look='danger'
                     icon={<LsCross />}
-                  >Delete</Button>
+                  >删除</Button>
                 </Elem>
               </Elem>,
             )
